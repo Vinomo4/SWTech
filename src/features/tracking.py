@@ -16,7 +16,7 @@ def track(message):
     try:
         os.makedirs(path)
     except OSError:
-        print ("directory %s already created" % path)
+        pass
     
     # Open the file in append & read mode ('a+')
     with open(file, "a+") as file_object:

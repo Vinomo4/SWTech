@@ -4,6 +4,10 @@ import numpy as np
 # Visualization
 import matplotlib.pyplot as plt
 import seaborn as sn
+plt.ioff()
+
+from tracking import track
+
 
 def save_outputs(fig,type_plot,variable,name_table):
     '''
@@ -36,14 +40,14 @@ def save_outputs(fig,type_plot,variable,name_table):
     try:
         os.makedirs(path)
     except OSError:
-        print ("directory %s already created" % path)
+        pass
     else:
-        print ("Successfully created the directory %s" % path)
+        track("Successfully created the directory %s" % path)
     
     # Save the figure/file 
     if (os.path.exists(file_name)== True):
-        print ("Warning: Figure %s already created" % path)
-        print('Figure will be overwritten')
+        track ("Warning: Figure %s already created" % path)
+        track('Figure will be overwritten')
         #c = input('  Do you want to overwrite content?(y/n)')
         #if c.lower() == 'n':
         #    print('Figure will not be overwritten, no action done')
@@ -58,7 +62,7 @@ def save_outputs(fig,type_plot,variable,name_table):
         else:
             plt.savefig(file_name, transparent=True)
         
-        print ("Successfully saved %s" % path)
+        track("Successfully saved %s" % path)
 
 def describe_variables(dataframe, numerical,table):
     '''
@@ -149,7 +153,7 @@ def plot_histogram(dataframe,numerical,name_table):
     '''
     dataframe = dataframe.select_dtypes(include=numerical)
     if dataframe.empty:
-        print(f'There are no numerical variables in dataframe')
+        track(f'There are no numerical variables in dataframe')
     else:
         for col in dataframe.columns:
             fig = plt.hist(x=dataframe[col], color='#F2AB6D', rwidth=0.85)
@@ -175,7 +179,7 @@ def plot_correlations(dataframe, numerical,name_table):
 
     dataframe = dataframe.select_dtypes(include=numerical)
     if dataframe.empty:
-        print(f'There are no numerical variables in dataframe')
+        track(f'There are no numerical variables in dataframe')
     else:
         corrMatrix = dataframe.corr()
         fig = sn.heatmap(corrMatrix, annot=True)

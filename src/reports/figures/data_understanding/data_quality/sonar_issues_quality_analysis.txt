@@ -19,3 +19,8 @@ We will check if all the rows with missing CLOSE_ANALYSIS_KEY have STATUS = OPEN
 ########## EXTRA CHECK: MISSING VALUES TEST RESULTS ##########
  · There are 10 closed issues without closing analysis keys.
 ----------------------------------------
+As the % of START_LINE is equal to the one in the END_LINE, we will check if the rows match.
+We will check if all the rows with missing CLOSE_ANALYSIS_KEY have STATUS = OPEN.
+As the % of START_LINE is equal to the one in the END_LINE, we will check if the rows match.
+As the % of START_LINE is equal to the one in the END_LINE, we will check if the rows match.
+We will check if all the rows with missing CLOSE_ANALYSIS_KEY have STATUS = OPEN.

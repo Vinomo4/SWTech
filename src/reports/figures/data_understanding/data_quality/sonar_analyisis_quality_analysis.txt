@@ -30,3 +30,5 @@ After reporting the FK problem to Davide, he told us that he wanted to observewh
       org.apache:santuario → 100.0%
       org.apache:thrift → 97.6012%
 ----------------------------------------
+Further exploration on the PK repeated values
+After reporting the FK problem to Davide, he told us that he wanted to observewheteher all the rows that contained such problems were related to a an specificproject or affected to serveral ones. Thus, we performed such analysis:

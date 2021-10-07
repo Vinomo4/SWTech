@@ -46,7 +46,7 @@ def write_test_results(filename,test_name,results):
     Output: 
         - String containing a well-formated presentation of the results from the quality test.
     '''
-    path = '../reports/figures/data_understanding/data_quality/'
+    path = '../../reports/figures/data_understanding/data_quality/'
     title= "\n"+ "#"*10 + " " + test_name + " test results "+ "#"*10
     title = title.upper()
     separator = "-"*40
