@@ -1,3 +1,6 @@
+import pandas as pd
+from prettytable import PrettyTable
+
 def delete_na(dataframes, dtypes):
     '''
     Objective:
@@ -5,8 +8,8 @@ def delete_na(dataframes, dtypes):
     Input:
         - Dataframe : String of the tables and their selected columns
         - Numerical : Numerical types
-        
-    Output: 
+
+    Output:
         - Dataframe with the deleted values.
     '''
     for i in range(len(dataframes)):
@@ -25,8 +28,8 @@ def analyse_categorical_variables(table_names, variable_names, dataframes):
         - Table_names : String of the names of the tables
         - Variable_names : String of the categorical variables corresponding to the table
         - Dataframes : String of the tables and their selected columns
-        
-    Output: 
+
+    Output:
         - Table with the categorical variables levels
         ["Table name", "Variable name", "Number of levels", "Types"]
     '''
@@ -35,7 +38,7 @@ def analyse_categorical_variables(table_names, variable_names, dataframes):
     for i in range(len(table_names)):
         for j in range(len(variable_names)):
             table.add_row([table_names[i], variable_names[j], len(dataframes[i][variable_names[j]].unique()), dataframes[i][variable_names[j]].unique()])
-    print(table) 
+    print(table)
 
 def one_hot_encoding(table, variable):
     '''
@@ -44,11 +47,11 @@ def one_hot_encoding(table, variable):
           If the categorical variable only has one level, the column is deleted.
     Input:
         - Table : String of the table name
-        - Variable : String of the categorical variable corresponding to the table 
-        
+        - Variable : String of the categorical variable corresponding to the table
+
     Output:
         For categorical variables with more than one level:
-            - Table with the categorical variable encoded to one-hot 
+            - Table with the categorical variable encoded to one-hot
             ["Table name", "Variable name", "Number of levels", "Types"]
         For categorical variables with less than one level:
             -String indicating so.
