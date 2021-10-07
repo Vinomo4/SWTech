@@ -4,7 +4,6 @@ import numpy as np
 # Visualization
 import matplotlib.pyplot as plt
 import seaborn as sn
-plt.ioff()
 
 from tracking import track
 

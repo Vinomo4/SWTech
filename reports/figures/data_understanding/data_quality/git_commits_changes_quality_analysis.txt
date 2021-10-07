@@ -1,8 +1,0 @@
----------- GIT COMMITS CHANGES QUALITY ANALYSIS ----------
-
-
-The test(s) that will be performed for the GIT COMMITS CHANGES table are:
- · Date range of commits
- · Foreign key constraint
- · Presence of NAs
---------------------------------------------------------------------------------
