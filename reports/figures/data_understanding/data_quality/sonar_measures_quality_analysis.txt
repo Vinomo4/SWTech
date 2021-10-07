@@ -1,0 +1,19 @@
+---------- SONAR MEASURES QUALITY ANALYSIS ----------
+
+
+The test(s) that will be performed for the SONAR MEASURES table are:
+ · Foreign key constraint
+ · Presence of NAs
+--------------------------------------------------------------------------------
+########## FK TEST RESULTS ##########
+ · All the FK values have an associated PK.
+----------------------------------------
+########## NA TEST RESULTS ##########
+ · The columns that contain NAs are:
+      complexity → 0.042%
+      cognitive_complexity → 0.042%
+      coverage → 0.051%
+      duplicated_lines_density → 0.039%
+      files → 0.039%
+      comment_lines_density → 0.039%
+----------------------------------------
