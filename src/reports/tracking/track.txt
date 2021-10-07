@@ -1,0 +1,213 @@
+Finished importing libraries
+Defining path of the data files
+Finished importing libraries
+Defining path of the data files
+Finished defining path of the data files
+Reading files
+Finished reading files
+Starting selecting variables of intereset for each dataframe
+Finishing selecting variables of intereset for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting modifying wrongly formated columns
+Starting defining types of variables
+Finishing modifying wrongly formated columns
+Starting defining types of variables
+--> Git commits
+--> Git commits
+Finished importing libraries
+Defining path of the data files
+Finished defining path of the data files
+Reading files
+Finished reading files
+Starting selecting variables of intereset for each dataframe
+Finishing selecting variables of intereset for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting modifying wrongly formated columns
+Finishing modifying wrongly formated columns
+Starting defining types of variables
+--> Git commits
+--> Git commits changes
+--> Git commits changes
+--> Jira issues
+--> Sonar analysis
+--> Sonar issues
+--> Sonar measures
+Finishing defining types of variables
+Starting computing basic statistics for the variables of interest for each table
+--> Git commits changes
+--> Git commits changes
+--> Git commits 
+Finished importing libraries
+Defining path of the data files
+Finished defining path of the data files
+Reading files
+Finished reading files
+Starting selecting variables of intereset for each dataframe
+Finishing selecting variables of intereset for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting modifying wrongly formated columns
+Finishing modifying wrongly formated columns
+Starting defining types of variables
+--> Git commits
+--> Git commits changes
+--> Jira issues
+--> Sonar analysis
+--> Sonar issues
+--> Sonar measures
+Finishing defining types of variables
+Starting computing basic statistics for the variables of interest for each table
+--> Git commits changes
+--> Git commits 
+--> Jira issues 
+--> Sonar analysis 
+--> Sonar issues 
+--> Sonar measures 
+Finishing defining types of variables
+Starting ploting barplots
+-->sonar analysis
+Starting ploting histograms
+--> Git commits
+Finished importing libraries
+Defining path of the data files
+Finished defining path of the data files
+Reading files
+Finished reading files
+Starting selecting variables of intereset for each dataframe
+Finishing selecting variables of intereset for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting modifying wrongly formated columns
+Finishing modifying wrongly formated columns
+Starting defining types of variables
+--> Git commits
+--> Git commits changes
+--> Jira issues
+--> Sonar analysis
+--> Sonar issues
+--> Sonar measures
+Finishing defining types of variables
+Starting computing basic statistics for the variables of interest for each table
+--> Git commits changes
+--> Git commits 
+--> Jira issues 
+--> Sonar analysis 
+--> Sonar issues 
+--> Sonar measures 
+Finishing defining types of variables
+Starting ploting barplots
+-->sonar analysis
+Finished importing libraries
+Defining path of the data files
+Finished defining path of the data files
+Reading files
+Finished reading files
+Starting selecting variables of intereset for each dataframe
+Finishing selecting variables of intereset for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting modifying wrongly formated columns
+Finishing modifying wrongly formated columns
+Starting defining types of variables
+--> Git commits
+--> Git commits changes
+--> Jira issues
+--> Sonar analysis
+--> Sonar issues
+--> Sonar measures
+Finishing defining types of variables
+Starting computing basic statistics for the variables of interest for each table
+--> Git commits changes
+--> Git commits 
+--> Jira issues 
+--> Sonar analysis 
+--> Sonar issues 
+--> Sonar measures 
+Finishing defining types of variables
+Starting ploting barplots
+-->sonar analysis
+-->sonar issues
+-->sonar issues
+Finishing ploting barplots
+Starting ploting histograms
+--> Git commits
+--> Jira issues
+--> Sonar analysis
+--> Sonar issues
+--> Sonar measures
+Finishing ploting histograms
+Starting correlations plots
+Git commits
+Jira issues
+Sonar analysis
+Sonar issues
+Sonar measures
+Finishing correlations plots
+Finishing correlations plots
+Finished importing libraries
+Defining path of the data files
+Finished defining path of the data files
+Reading files
+Finished reading files
+Starting selecting variables of intereset for each dataframe
+Finishing selecting variables of intereset for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting modifying wrongly formated columns
+Finishing modifying wrongly formated columns
+Starting defining types of variables
+--> Git commits
+--> Git commits changes
+--> Jira issues
+--> Sonar analysis
+--> Sonar issues
+--> Sonar measures
+Finishing defining types of variables
+Starting computing basic statistics for the variables of interest for each table
+--> Git commits changes
+--> Git commits 
+--> Jira issues 
+--> Sonar analysis 
+--> Sonar issues 
+--> Sonar measures 
+Finishing defining types of variables
+Starting ploting barplots
+-->sonar analysis
+-->sonar issues
+-->sonar issues
+Finishing ploting barplots
+Starting ploting histograms
+--> Git commits
+--> Jira issues
+--> Sonar analysis
+--> Sonar issues
+--> Sonar measures
+Finishing ploting histograms
+Starting correlations plots
+Git commits
+Jira issues
+Sonar analysis
+Sonar issues
+Sonar measures
+Finishing correlations plots
+Starting Checking data quality
+--> Sonar measures
+--> Sonar issues
+--> Sonar analysis
+--> Jira issues
+--> Git commits
+--> Git commits
+--> Git commits
+Finished importing libraries
+Defining path of the data files
+Finished defining path of the data files
+Reading files
+Finished reading files
+Starting selecting variables of intereset for each dataframe
+Finishing selecting variables of intereset for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting modifying wrongly formated columns
+--> Git commits
