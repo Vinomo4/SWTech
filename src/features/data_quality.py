@@ -14,7 +14,7 @@ def initialize_doc(filename,dataset_name):
         - String containing the quality test that will be performed for the selected table.
     '''
     # First, we create the folder where the results will be stored.
-    path = '../reports/figures/data_understanding/data_quality/'
+    path = '../../reports/figures/data_understanding/data_quality/'
     if not os.path.isdir(path): 
         os.makedirs(path)
     # Then we create the intro for the desired dataset.

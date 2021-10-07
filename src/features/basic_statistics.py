@@ -20,16 +20,16 @@ def save_outputs(fig,type_plot,variable,name_table):
     # Path and name of the file/figure we want to save
     if variable == None :
         if type_plot == 'summary_cont' or type_plot == 'summary_cat':
-            path = '../reports/figures/data_understanding'+"/"+type_plot[0:7]+"/"+name_table
+            path = '../../reports/figures/data_understanding'+"/"+type_plot[0:7]+"/"+name_table
             file_name = path+"/"+type_plot+".csv"
         else:
-            path = '../reports/figures/data_understanding'+"/"+type_plot+"/"+name_table
+            path = '../../reports/figures/data_understanding'+"/"+type_plot+"/"+name_table
             if type_plot == "type_variables":
                 file_name = path+"/"+type_plot+".csv"
             else :
                 file_name = path+"/"+type_plot+".png"
     else:
-        path = '../reports/figures/data_understanding'+"/"+type_plot+"/"+name_table
+        path = '../../reports/figures/data_understanding'+"/"+type_plot+"/"+name_table
         file_name = path+"/"+type_plot+"_"+variable+".png"
     
     # Directory creation if doesn't exists 
