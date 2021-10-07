@@ -13,11 +13,11 @@ def save_outputs(fig,type_plot,variable,name_table):
     Objective:
         - Save png figures or csv files
     Input:
-        - Fig : figure or file that want to be saved 
+        - Fig : figure or file that want to be saved
         - Type_plot : Barplot/histogram/heatmap/summary_cont/summary_cat/type_variables
         - Variable : Name of the table variable or None
         - Name_table : String name of the table
-    Output: 
+    Output:
         - None
     '''
     # Path and name of the file/figure we want to save
@@ -34,16 +34,16 @@ def save_outputs(fig,type_plot,variable,name_table):
     else:
         path = '../../reports/figures/data_understanding'+"/"+type_plot+"/"+name_table
         file_name = path+"/"+type_plot+"_"+variable+".png"
-    
-    # Directory creation if doesn't exists 
+
+    # Directory creation if doesn't exists
     try:
         os.makedirs(path)
     except OSError:
         pass
     else:
         track("Successfully created the directory %s" % path)
-    
-    # Save the figure/file 
+
+    # Save the figure/file
     if (os.path.exists(file_name)== True):
         track ("Warning: Figure %s already created" % path)
         track('Figure will be overwritten')
@@ -60,7 +60,7 @@ def save_outputs(fig,type_plot,variable,name_table):
             fig.to_csv(file_name)
         else:
             plt.savefig(file_name, transparent=True)
-        
+
         track("Successfully saved %s" % path)
 
 def describe_variables(dataframe, numerical,table):
@@ -70,8 +70,8 @@ def describe_variables(dataframe, numerical,table):
     Input:
         - Dataframe : Table with the selected columns
         - Numerical : Numerical types
-        - Table : String name of the table 
-    Output: 
+        - Table : String name of the table
+    Output:
         For continuous variables:
             - Count : Number of non-null observations
             - Mean : Mean of values
@@ -87,10 +87,10 @@ def describe_variables(dataframe, numerical,table):
     '''
     dataframe_cont = dataframe.select_dtypes(include=numerical)
     dataframe_cat = dataframe.select_dtypes(exclude=numerical)
-    
+
     cont_empty = dataframe_cont.empty
     cat_empty = dataframe_cat.empty
-    
+
     if not cont_empty and not cat_empty:
         summary_cat = dataframe_cat.describe()
         save_outputs(summary_cat,"summary_cat",None,table)
@@ -116,9 +116,9 @@ def bar_plot(variable,dataframe,vertical,name_table):
         - Variable : data of the variable we want want to plot
         - Dataframe : All the table
         - Vertical : Is we want to plot the bar chart vertical (True) or horizontal(False)
-        - Name_table : String name of the table 
+        - Name_table : String name of the table
 
-    Output: 
+    Output:
         - Barplot
     '''
     labels = variable.unique()
@@ -129,7 +129,7 @@ def bar_plot(variable,dataframe,vertical,name_table):
     if vertical:
         fig = plt.barh(labels,count)
         plt.ylabel(variable.name)
-        plt.xlabel('Count')       
+        plt.xlabel('Count')
     else:
         fig = plt.bar(labels,count)
         plt.xlabel(variable.name)
@@ -146,8 +146,8 @@ def plot_histogram(dataframe,numerical,name_table):
     Input:
         - Dataframe : Table with the selected columns
         - Numerical : Numerical types
-        - Name_table : String name of the table 
-    Output: 
+        - Name_table : String name of the table
+    Output:
         - Histogram
     '''
     dataframe = dataframe.select_dtypes(include=numerical)
@@ -160,19 +160,17 @@ def plot_histogram(dataframe,numerical,name_table):
             fig = plt.xlabel(f'{col}')
             fig = plt.ylabel('Frequency')
             save_outputs(fig,'histogram',col,name_table)
-            #plt.show()
-            
-            
+
 
 def plot_correlations(dataframe, numerical,name_table):
     '''
     Objective:
         - Plot a heatmap of all numeric variables in dataframe
     Input:
-         - Dataframe : Table with the selected columns
+        - Dataframe : Table with the selected columns
         - Numerical : Numerical types
-        - Name_table : String name of the table 
-    Output: 
+        - Name_table : String name of the table
+    Output:
         - Heatmap
     '''
 
@@ -181,7 +179,7 @@ def plot_correlations(dataframe, numerical,name_table):
         track(f'There are no numerical variables in dataframe')
     else:
         corrMatrix = dataframe.corr()
+        if name_table == "sonar_measures":
+            plt.figure(figsize = (20,20))
         fig = sn.heatmap(corrMatrix, annot=True)
         save_outputs(fig,'heatmap',None,name_table)
-        #plt.show()
-
