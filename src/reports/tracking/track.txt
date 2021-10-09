@@ -569,3 +569,342 @@ Starting joining SONAR tables
 Starting joining SONAR tables
 Finishing joining SONAR tables
 Starting joining COMMIT tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Finishing joining SONAR tables
+Starting joining COMMIT tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Finishing joining SONAR tables
+Starting joining COMMIT tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting analysing categorical variables
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Finishing joining SONAR tables
+Starting joining COMMIT tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Starting joining SONAR tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Starting analysing categorical variables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Starting defining numercial types
+Finishing defining numercial types
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Starting joining COMMIT tables
+Starting joining COMMIT tables
+Starting joining COMMIT tables
+Starting joining COMMIT tables
+Starting joining COMMIT tables
+Starting joining COMMIT tables
+Starting joining COMMIT tables
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Finishing joining SONAR tables
+Starting joining COMMIT tables

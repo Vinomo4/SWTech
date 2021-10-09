@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from prettytable import PrettyTable
 
 def delete_na(dataframes, dtypes):
@@ -69,7 +70,7 @@ def one_hot_encoding(table, variable):
 def message_length(table,column):
     '''
     Objective:
-        - Generate a column containgthe length of different messages and delete the column
+        - Generate a column containg the length of different messages and delete the column
           that contains the orignal text.
     Input:
         - table : Dataframe that wants to be used.
@@ -82,3 +83,28 @@ def message_length(table,column):
         message_length.append(len(msg))
     # Reassign the MESSAGE variable to its length instead of the initial string \n",
     table[column] = message_length
+
+
+def change_commits_to_authors(table,column,author_dict):
+    '''
+    Objective:
+        - Generate a column containg the authors of a respective analysis/issue
+          instead of the FK commit reference.
+    Input:
+        - table : Dataframe that wants to be used.
+        - column : Name of the variable that contains the commits.
+        - author_dict: Dictionary containg commits as key an its author as value.
+    Output:
+        - Dataframe containg the mentioned modification.
+    '''
+    authors_measures = []
+    for i in range(len(table)):
+        aux = table[column][i]
+        if author_dict.get(aux): authors_measures.append(author_dict[aux])
+        else: authors_measures.append(np.nan)
+
+    # Then, we add the column to the sonar_complete table and delete the REVISION one.
+
+    table["Author"] = authors_measures
+    table = table.drop(column,axis=1)
+    return table
