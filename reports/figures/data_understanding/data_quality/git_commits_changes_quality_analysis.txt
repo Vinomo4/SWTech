@@ -5,6 +5,7 @@ The test(s) that will be performed for the GIT COMMITS CHANGES table are:
  · Date range of commits
  · Foreign key constraint
  · Presence of NAs
+ · Duplicated rows
 --------------------------------------------------------------------------------
 ########## DATES RANGE TEST RESULTS ##########
  · All the dates are in the specified range.
@@ -20,6 +21,9 @@ The test(s) that will be performed for the GIT COMMITS CHANGES table are:
       DATE → 3.6486%
       LINES_ADDED → 3.6486%
       LINES_REMOVED → 3.6486%
+----------------------------------------
+########## DUPLICATED TEST RESULTS ##########
+ · There are 51.421 % of duplicated rows.
 ----------------------------------------
 We will check if the NAs from different columns belong to the same rows.
 ########## EXTRA CHECK: MISSING VALUES TEST RESULTS ##########

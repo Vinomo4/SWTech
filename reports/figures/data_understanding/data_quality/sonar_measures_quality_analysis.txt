@@ -4,6 +4,7 @@
 The test(s) that will be performed for the SONAR MEASURES table are:
  · Foreign key constraint
  · Presence of NAs
+ · Duplicated rows
 --------------------------------------------------------------------------------
 ########## FK TEST RESULTS ##########
  · All the FK values have an associated PK.
@@ -16,4 +17,7 @@ The test(s) that will be performed for the SONAR MEASURES table are:
       duplicated_lines_density → 0.039%
       files → 0.039%
       comment_lines_density → 0.039%
+----------------------------------------
+########## DUPLICATED TEST RESULTS ##########
+ · There aren't any duplicated rows.
 ----------------------------------------

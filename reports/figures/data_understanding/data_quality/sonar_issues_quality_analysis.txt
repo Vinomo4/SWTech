@@ -3,6 +3,7 @@
 
 The test(s) that will be performed for the SONAR ISSUES table are:
  · Presence of NAs
+ · Duplicated rows
 --------------------------------------------------------------------------------
 ########## NA TEST RESULTS ##########
  · The columns that contain NAs are:
@@ -10,6 +11,9 @@ The test(s) that will be performed for the SONAR ISSUES table are:
       START_LINE → 4.6714%
       END_LINE → 4.6714%
       CLOSE_ANALYSIS_KEY → 22.0453%
+----------------------------------------
+########## DUPLICATED TEST RESULTS ##########
+ · There are 20.175 % of duplicated rows.
 ----------------------------------------
 As the % of START_LINE is equal to the one in the END_LINE, we will check if the rows match.
 ########## EXTRA CHECK: MISSING VALUES TEST RESULTS ##########
