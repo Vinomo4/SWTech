@@ -6,18 +6,18 @@ def track(message):
         - Write what the file is doing
     Input:
         - Message: Message that has to be written to the track file
-    Output: 
+    Output:
         - None
-    ''' 
-    path = '../reports/tracking'
+    '''
+    path = '../../reports/tracking'
     file = path+'/track.txt'
 
-    # Directory creation if doesn't exists 
+    # Directory creation if doesn't exists
     try:
         os.makedirs(path)
     except OSError:
         pass
-    
+
     # Open the file in append & read mode ('a+')
     with open(file, "a+") as file_object:
         # Move read cursor to the start of file.
