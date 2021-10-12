@@ -22,12 +22,12 @@ def initialize_doc(filename,dataset_name):
     title = title.upper()
     title_and_summary = '\n'.join([title,"\n","The test(s) that will be performed for the "+dataset_name.upper()+" table are:"])
     separator = "--------------------------------------------------------------------------------"
-    if dataset_name == "Sonar measures": tests = '\n · '.join(["Foreign key constraint","Presence of NAs"])
-    elif dataset_name == "Sonar issues": tests = "Presence of NAs"
-    elif dataset_name == "Sonar analysis": tests = '\n · '.join(["Primary key constraint","Foreign key constraint"])
-    elif dataset_name == "Jira issues": tests = "Foreign key constraint"
-    elif dataset_name == "Git commits": tests = '\n · '.join(["Primary key constraint","Date range of commits","Number of missing authors"])
-    elif dataset_name == "Git commits changes": tests = '\n · '.join(["Date range of commits","Foreign key constraint","Presence of NAs"])
+    if dataset_name == "Sonar measures": tests = '\n · '.join(["Foreign key constraint","Presence of NAs","Duplicated rows"])
+    elif dataset_name == "Sonar issues": tests = '\n · '.join(["Presence of NAs","Duplicated rows"])
+    elif dataset_name == "Sonar analysis": tests = '\n · '.join(["Primary key constraint","Foreign key constraint","Duplicated rows"])
+    elif dataset_name == "Jira issues": tests = '\n · '.join(["Foreign key constraint","Duplicated rows"])
+    elif dataset_name == "Git commits": tests = '\n · '.join(["Primary key constraint","Date range of commits","Number of missing authors","Duplicated rows"])
+    elif dataset_name == "Git commits changes": tests = '\n · '.join(["Date range of commits","Foreign key constraint","Presence of NAs","Duplicated rows"])
     intro = '\n · '.join([title_and_summary,tests + "\n"+ separator])
     # Finally the intro is written into the file.
     f = open(path+filename, "w")
@@ -197,3 +197,21 @@ def check_FK(dataset,fk,dataset_w_pk,pk):
         result = str(round(len(fk_violations)/len(dataset)*100,3)) + "% of the FKs are unreferenced."
     else: result = "All the FK values have an associated PK."
     return result,fk_violations
+
+def check_duplicates(dataset):
+    '''
+    Objective:
+        - Evaluate if a table has duplicated rows.
+    Input:
+        - dataset : Pandas dataset that wants to be analyzed (One table of the TechDebt DS).
+    Output:
+        For tables without duplicated problems:
+            - String indicating that there isn't any problem.
+        For tables with duplicated problems:
+            - String inidicating the percentage of duplicatd rows.
+    '''
+    num_duplicated = dataset.duplicated().sum()
+    if not num_duplicated:
+        result = "There aren't any duplicated rows."
+    else: result = "There are " + str(round(num_duplicated/len(dataset)*100,3)) + " % of duplicated rows."
+    return result
