@@ -823,3 +823,709 @@ Defining path to data files
 Reading files
 Finished reading files
 >>>>>>> 08f6158a27a4ef9240e52cb27e0b1f202eeacdfb
+
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Defining path to data files
+Reading files
+Finished reading files
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605285
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706112
+For n_clusters=3, The Silhouette Coefficient is 0.4114604226365803
+For n_clusters=4, The Silhouette Coefficient is 0.3287021161389184
+For n_clusters=5, The Silhouette Coefficient is 0.3504274439686777
+For n_clusters=6, The Silhouette Coefficient is 0.34113337924232345
+For n_clusters=7, The Silhouette Coefficient is 0.3331262713176175
+For n_clusters=8, The Silhouette Coefficient is 0.3337174655107514
+For n_clusters=9, The Silhouette Coefficient is 0.32137453985851716
+For n_clusters=10, The Silhouette Coefficient is 0.33556082305029844
+For n_clusters=11, The Silhouette Coefficient is 0.3370301853290391
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Starting standardization of data
+Finished standardization of data
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Defining path to data files
+Reading preprocessed data
+Finished reading preprocessed data
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading preprocessed data
+Finished reading preprocessed data
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605285
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706112
+For n_clusters=3, The Silhouette Coefficient is 0.4114604226365803
+For n_clusters=4, The Silhouette Coefficient is 0.3287021161389184
+For n_clusters=5, The Silhouette Coefficient is 0.3504274439686777
+For n_clusters=6, The Silhouette Coefficient is 0.34113337924232345
+For n_clusters=7, The Silhouette Coefficient is 0.3331262713176175
+For n_clusters=8, The Silhouette Coefficient is 0.3337174655107514
+For n_clusters=9, The Silhouette Coefficient is 0.32137453985851716
+For n_clusters=10, The Silhouette Coefficient is 0.33556082305029844
+For n_clusters=11, The Silhouette Coefficient is 0.3370301853290391
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7260160446166992
+For n_clusters=3, The Silhouette Coefficient is 0.7310702204704285
+For n_clusters=4, The Silhouette Coefficient is 0.5228273868560791
+For n_clusters=5, The Silhouette Coefficient is 0.5307568311691284
+For n_clusters=6, The Silhouette Coefficient is 0.5822917819023132
+For n_clusters=7, The Silhouette Coefficient is 0.5665283799171448
+For n_clusters=8, The Silhouette Coefficient is 0.5683253407478333
+For n_clusters=9, The Silhouette Coefficient is 0.5705537796020508
+For n_clusters=10, The Silhouette Coefficient is 0.5521098971366882
+For n_clusters=11, The Silhouette Coefficient is 0.5709940195083618
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.744083821773529
+For n_clusters=3, The Silhouette Coefficient is 0.7416412830352783
+For n_clusters=4, The Silhouette Coefficient is 0.4621826410293579
+For n_clusters=5, The Silhouette Coefficient is 0.5057982802391052
+For n_clusters=6, The Silhouette Coefficient is 0.5262536406517029
+For n_clusters=7, The Silhouette Coefficient is 0.5186437964439392
+For n_clusters=8, The Silhouette Coefficient is 0.5141293406486511
+For n_clusters=9, The Silhouette Coefficient is 0.4961514174938202
+For n_clusters=10, The Silhouette Coefficient is 0.5235779285430908
+For n_clusters=11, The Silhouette Coefficient is 0.5464131832122803
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7350839376449585
+For n_clusters=3, The Silhouette Coefficient is 0.7486918568611145
+For n_clusters=4, The Silhouette Coefficient is 0.45753148198127747
+For n_clusters=5, The Silhouette Coefficient is 0.47566017508506775
+For n_clusters=6, The Silhouette Coefficient is 0.5439795851707458
+For n_clusters=7, The Silhouette Coefficient is 0.5451200604438782
+For n_clusters=8, The Silhouette Coefficient is 0.5320577025413513
+For n_clusters=9, The Silhouette Coefficient is 0.5434707999229431
+For n_clusters=10, The Silhouette Coefficient is 0.549839198589325
+For n_clusters=11, The Silhouette Coefficient is 0.5670953989028931
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7984247803688049
+For n_clusters=3, The Silhouette Coefficient is 0.8158546686172485
+For n_clusters=4, The Silhouette Coefficient is 0.48714151978492737
+For n_clusters=5, The Silhouette Coefficient is 0.4820341169834137
+For n_clusters=6, The Silhouette Coefficient is 0.4955518841743469
+For n_clusters=7, The Silhouette Coefficient is 0.5319873094558716
+For n_clusters=8, The Silhouette Coefficient is 0.5650745034217834
+For n_clusters=9, The Silhouette Coefficient is 0.5667153596878052
+For n_clusters=10, The Silhouette Coefficient is 0.5924752950668335
+For n_clusters=11, The Silhouette Coefficient is 0.6050381660461426
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7571116089820862
+For n_clusters=3, The Silhouette Coefficient is 0.7463650107383728
+For n_clusters=4, The Silhouette Coefficient is 0.4538162052631378
+For n_clusters=5, The Silhouette Coefficient is 0.5122681856155396
+For n_clusters=6, The Silhouette Coefficient is 0.5335625410079956
+For n_clusters=7, The Silhouette Coefficient is 0.5279878973960876
+For n_clusters=8, The Silhouette Coefficient is 0.5280615091323853
+For n_clusters=9, The Silhouette Coefficient is 0.5269651412963867
+For n_clusters=10, The Silhouette Coefficient is 0.5304454565048218
+For n_clusters=11, The Silhouette Coefficient is 0.5519152879714966
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7785872220993042
+For n_clusters=3, The Silhouette Coefficient is 0.7725850343704224
+For n_clusters=4, The Silhouette Coefficient is 0.4576094150543213
+For n_clusters=5, The Silhouette Coefficient is 0.508843719959259
+For n_clusters=6, The Silhouette Coefficient is 0.5491035580635071
+For n_clusters=7, The Silhouette Coefficient is 0.5265231728553772
+For n_clusters=8, The Silhouette Coefficient is 0.518744170665741
+For n_clusters=9, The Silhouette Coefficient is 0.5216200947761536
+For n_clusters=10, The Silhouette Coefficient is 0.523131251335144
+For n_clusters=11, The Silhouette Coefficient is 0.5473943948745728
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7465144991874695
+For n_clusters=3, The Silhouette Coefficient is 0.7371885180473328
+For n_clusters=4, The Silhouette Coefficient is 0.46709904074668884
+For n_clusters=5, The Silhouette Coefficient is 0.5105364918708801
+For n_clusters=6, The Silhouette Coefficient is 0.5516237616539001
+For n_clusters=7, The Silhouette Coefficient is 0.5284762978553772
+For n_clusters=8, The Silhouette Coefficient is 0.5207662582397461
+For n_clusters=9, The Silhouette Coefficient is 0.5317641496658325
+For n_clusters=10, The Silhouette Coefficient is 0.5361272692680359
+For n_clusters=11, The Silhouette Coefficient is 0.5595647692680359
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605285
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706112
+For n_clusters=3, The Silhouette Coefficient is 0.4114604226365803
+For n_clusters=4, The Silhouette Coefficient is 0.3287021161389184
+For n_clusters=5, The Silhouette Coefficient is 0.3504274439686777
+For n_clusters=6, The Silhouette Coefficient is 0.34113337924232345
+For n_clusters=7, The Silhouette Coefficient is 0.3331262713176175
+For n_clusters=8, The Silhouette Coefficient is 0.3337174655107514
+For n_clusters=9, The Silhouette Coefficient is 0.32137453985851716
+For n_clusters=10, The Silhouette Coefficient is 0.33556082305029844
+For n_clusters=11, The Silhouette Coefficient is 0.3370301853290391
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605285
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706112
+For n_clusters=3, The Silhouette Coefficient is 0.4114604226365803
+For n_clusters=4, The Silhouette Coefficient is 0.3287021161389184
+For n_clusters=5, The Silhouette Coefficient is 0.3504274439686777
+For n_clusters=6, The Silhouette Coefficient is 0.34113337924232345
+For n_clusters=7, The Silhouette Coefficient is 0.3331262713176175
+For n_clusters=8, The Silhouette Coefficient is 0.3337174655107514
+For n_clusters=9, The Silhouette Coefficient is 0.32137453985851716
+For n_clusters=10, The Silhouette Coefficient is 0.33556082305029844
+For n_clusters=11, The Silhouette Coefficient is 0.3370301853290391
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading preprocessed data
+Finished reading preprocessed data
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605285
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706112
+For n_clusters=3, The Silhouette Coefficient is 0.4114604226365803
+For n_clusters=4, The Silhouette Coefficient is 0.3287021161389184
+For n_clusters=5, The Silhouette Coefficient is 0.3504274439686777
+For n_clusters=6, The Silhouette Coefficient is 0.34113337924232345
+For n_clusters=7, The Silhouette Coefficient is 0.3331262713176175
+For n_clusters=8, The Silhouette Coefficient is 0.3337174655107514
+For n_clusters=9, The Silhouette Coefficient is 0.32137453985851716
+For n_clusters=10, The Silhouette Coefficient is 0.33556082305029844
+For n_clusters=11, The Silhouette Coefficient is 0.3370301853290391
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7187119722366333
+For n_clusters=3, The Silhouette Coefficient is 0.7117754817008972
+For n_clusters=4, The Silhouette Coefficient is 0.4315386414527893
+For n_clusters=5, The Silhouette Coefficient is 0.49423956871032715
+For n_clusters=6, The Silhouette Coefficient is 0.5241840481758118
+For n_clusters=7, The Silhouette Coefficient is 0.5629732608795166
+For n_clusters=8, The Silhouette Coefficient is 0.5323735475540161
+For n_clusters=9, The Silhouette Coefficient is 0.5536954998970032
+For n_clusters=10, The Silhouette Coefficient is 0.5564209818840027
+For n_clusters=11, The Silhouette Coefficient is 0.5746876001358032
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7263662815093994
+For n_clusters=3, The Silhouette Coefficient is 0.7122301459312439
+For n_clusters=4, The Silhouette Coefficient is 0.4760502576828003
+For n_clusters=5, The Silhouette Coefficient is 0.5256957411766052
+For n_clusters=6, The Silhouette Coefficient is 0.5268666744232178
+For n_clusters=7, The Silhouette Coefficient is 0.5253347158432007
+For n_clusters=8, The Silhouette Coefficient is 0.5172327160835266
+For n_clusters=9, The Silhouette Coefficient is 0.49879929423332214
+For n_clusters=10, The Silhouette Coefficient is 0.5174682140350342
+For n_clusters=11, The Silhouette Coefficient is 0.5441056489944458
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7635950446128845
+For n_clusters=3, The Silhouette Coefficient is 0.6683240532875061
+For n_clusters=4, The Silhouette Coefficient is 0.4742811322212219
+For n_clusters=5, The Silhouette Coefficient is 0.5219423174858093
+For n_clusters=6, The Silhouette Coefficient is 0.5187692642211914
+For n_clusters=7, The Silhouette Coefficient is 0.5272120237350464
+For n_clusters=8, The Silhouette Coefficient is 0.535406231880188
+For n_clusters=9, The Silhouette Coefficient is 0.5203620791435242
+For n_clusters=10, The Silhouette Coefficient is 0.515951931476593
+For n_clusters=11, The Silhouette Coefficient is 0.5261638760566711
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6975651383399963
+For n_clusters=3, The Silhouette Coefficient is 0.6962293386459351
+For n_clusters=4, The Silhouette Coefficient is 0.48094281554222107
+For n_clusters=5, The Silhouette Coefficient is 0.5199308395385742
+For n_clusters=6, The Silhouette Coefficient is 0.5297136306762695
+For n_clusters=7, The Silhouette Coefficient is 0.5359241366386414
+For n_clusters=8, The Silhouette Coefficient is 0.5299603343009949
+For n_clusters=9, The Silhouette Coefficient is 0.5320522785186768
+For n_clusters=10, The Silhouette Coefficient is 0.5205983519554138
+For n_clusters=11, The Silhouette Coefficient is 0.5130965113639832
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6711328625679016
+For n_clusters=3, The Silhouette Coefficient is 0.6714078187942505
+For n_clusters=4, The Silhouette Coefficient is 0.4953208565711975
+For n_clusters=5, The Silhouette Coefficient is 0.5340683460235596
+For n_clusters=6, The Silhouette Coefficient is 0.534420371055603
+For n_clusters=7, The Silhouette Coefficient is 0.5349502563476562
+For n_clusters=8, The Silhouette Coefficient is 0.5252277255058289
+For n_clusters=9, The Silhouette Coefficient is 0.5145807862281799
+For n_clusters=10, The Silhouette Coefficient is 0.5268987417221069
+For n_clusters=11, The Silhouette Coefficient is 0.5418869853019714
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7615071535110474
+For n_clusters=3, The Silhouette Coefficient is 0.6771948337554932
+For n_clusters=4, The Silhouette Coefficient is 0.5107496380805969
+For n_clusters=5, The Silhouette Coefficient is 0.5389533042907715
+For n_clusters=6, The Silhouette Coefficient is 0.5445557236671448
+For n_clusters=7, The Silhouette Coefficient is 0.5441136956214905
+For n_clusters=8, The Silhouette Coefficient is 0.5416265726089478
+For n_clusters=9, The Silhouette Coefficient is 0.5532898306846619
+For n_clusters=10, The Silhouette Coefficient is 0.5449446439743042
+For n_clusters=11, The Silhouette Coefficient is 0.5695647597312927
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7960208058357239
+For n_clusters=3, The Silhouette Coefficient is 0.6687318682670593
+For n_clusters=4, The Silhouette Coefficient is 0.5141254663467407
+For n_clusters=5, The Silhouette Coefficient is 0.5512211918830872
+For n_clusters=6, The Silhouette Coefficient is 0.5435221195220947
+For n_clusters=7, The Silhouette Coefficient is 0.5445867776870728
+For n_clusters=8, The Silhouette Coefficient is 0.5260247588157654
+For n_clusters=9, The Silhouette Coefficient is 0.5259703397750854
+For n_clusters=10, The Silhouette Coefficient is 0.5450056195259094
+For n_clusters=11, The Silhouette Coefficient is 0.5434814691543579
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7643546462059021
+For n_clusters=3, The Silhouette Coefficient is 0.6889560222625732
+For n_clusters=4, The Silhouette Coefficient is 0.5010743141174316
+For n_clusters=5, The Silhouette Coefficient is 0.5570220947265625
+For n_clusters=6, The Silhouette Coefficient is 0.5619749426841736
+For n_clusters=7, The Silhouette Coefficient is 0.5405388474464417
+For n_clusters=8, The Silhouette Coefficient is 0.5233622789382935
+For n_clusters=9, The Silhouette Coefficient is 0.5482814311981201
+For n_clusters=10, The Silhouette Coefficient is 0.5342094898223877
+For n_clusters=11, The Silhouette Coefficient is 0.5556906461715698
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7935946583747864
+For n_clusters=3, The Silhouette Coefficient is 0.6566901803016663
+For n_clusters=4, The Silhouette Coefficient is 0.4881630837917328
+For n_clusters=5, The Silhouette Coefficient is 0.5416366457939148
+For n_clusters=6, The Silhouette Coefficient is 0.5619455575942993
+For n_clusters=7, The Silhouette Coefficient is 0.5452036261558533
+For n_clusters=8, The Silhouette Coefficient is 0.5406930446624756
+For n_clusters=9, The Silhouette Coefficient is 0.5589714646339417
+For n_clusters=10, The Silhouette Coefficient is 0.5482602119445801
+For n_clusters=11, The Silhouette Coefficient is 0.562647819519043
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7643468379974365
+For n_clusters=3, The Silhouette Coefficient is 0.6707708835601807
+For n_clusters=4, The Silhouette Coefficient is 0.5137157440185547
+For n_clusters=5, The Silhouette Coefficient is 0.5452873110771179
+For n_clusters=6, The Silhouette Coefficient is 0.5266713500022888
+For n_clusters=7, The Silhouette Coefficient is 0.5496706962585449
+For n_clusters=8, The Silhouette Coefficient is 0.5431691408157349
+For n_clusters=9, The Silhouette Coefficient is 0.550988495349884
+For n_clusters=10, The Silhouette Coefficient is 0.5386224985122681
+For n_clusters=11, The Silhouette Coefficient is 0.5312180519104004
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7726795673370361
+For n_clusters=3, The Silhouette Coefficient is 0.5994474291801453
+For n_clusters=4, The Silhouette Coefficient is 0.4821922481060028
+For n_clusters=5, The Silhouette Coefficient is 0.5243942737579346
+For n_clusters=6, The Silhouette Coefficient is 0.5157712697982788
+For n_clusters=7, The Silhouette Coefficient is 0.5208378434181213
+For n_clusters=8, The Silhouette Coefficient is 0.49847325682640076
+For n_clusters=9, The Silhouette Coefficient is 0.5110266804695129
+For n_clusters=10, The Silhouette Coefficient is 0.500461757183075
+For n_clusters=11, The Silhouette Coefficient is 0.4992602467536926
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7943686842918396
+For n_clusters=3, The Silhouette Coefficient is 0.6087206602096558
+For n_clusters=4, The Silhouette Coefficient is 0.5050642490386963
+For n_clusters=5, The Silhouette Coefficient is 0.5381704568862915
+For n_clusters=6, The Silhouette Coefficient is 0.5176782608032227
+For n_clusters=7, The Silhouette Coefficient is 0.5264526009559631
+For n_clusters=8, The Silhouette Coefficient is 0.5200584530830383
+For n_clusters=9, The Silhouette Coefficient is 0.5344660878181458
+For n_clusters=10, The Silhouette Coefficient is 0.5406435132026672
+For n_clusters=11, The Silhouette Coefficient is 0.5179346203804016
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7660257816314697
+For n_clusters=3, The Silhouette Coefficient is 0.6152830123901367
+For n_clusters=4, The Silhouette Coefficient is 0.5083851218223572
+For n_clusters=5, The Silhouette Coefficient is 0.5362757444381714
+For n_clusters=6, The Silhouette Coefficient is 0.5208380818367004
+For n_clusters=7, The Silhouette Coefficient is 0.5282254815101624
+For n_clusters=8, The Silhouette Coefficient is 0.5100225806236267
+For n_clusters=9, The Silhouette Coefficient is 0.521856963634491
+For n_clusters=10, The Silhouette Coefficient is 0.5262395143508911
+For n_clusters=11, The Silhouette Coefficient is 0.5112967491149902
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7954534292221069
+For n_clusters=3, The Silhouette Coefficient is 0.6113864183425903
+For n_clusters=4, The Silhouette Coefficient is 0.49749210476875305
+For n_clusters=5, The Silhouette Coefficient is 0.5402208566665649
+For n_clusters=6, The Silhouette Coefficient is 0.5293798446655273
+For n_clusters=7, The Silhouette Coefficient is 0.5350195169448853
+For n_clusters=8, The Silhouette Coefficient is 0.5137731432914734
+For n_clusters=9, The Silhouette Coefficient is 0.5314555168151855
+For n_clusters=10, The Silhouette Coefficient is 0.5204675197601318
+For n_clusters=11, The Silhouette Coefficient is 0.534891664981842
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7954534292221069
+For n_clusters=3, The Silhouette Coefficient is 0.6113864183425903
+For n_clusters=4, The Silhouette Coefficient is 0.49749210476875305
+For n_clusters=5, The Silhouette Coefficient is 0.5402208566665649
+For n_clusters=6, The Silhouette Coefficient is 0.5293798446655273
+For n_clusters=7, The Silhouette Coefficient is 0.5350195169448853
+For n_clusters=8, The Silhouette Coefficient is 0.5137731432914734
+For n_clusters=9, The Silhouette Coefficient is 0.5314555168151855
+For n_clusters=10, The Silhouette Coefficient is 0.5204675197601318
+For n_clusters=11, The Silhouette Coefficient is 0.534891664981842
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7757139801979065
+For n_clusters=3, The Silhouette Coefficient is 0.6351085305213928
+For n_clusters=4, The Silhouette Coefficient is 0.5058578848838806
+For n_clusters=5, The Silhouette Coefficient is 0.5306551456451416
+For n_clusters=6, The Silhouette Coefficient is 0.5236276984214783
+For n_clusters=7, The Silhouette Coefficient is 0.5298376679420471
+For n_clusters=8, The Silhouette Coefficient is 0.5377109050750732
+For n_clusters=9, The Silhouette Coefficient is 0.5261747241020203
+For n_clusters=10, The Silhouette Coefficient is 0.5128872990608215
+For n_clusters=11, The Silhouette Coefficient is 0.5204099416732788
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7757139801979065
+For n_clusters=3, The Silhouette Coefficient is 0.6351085305213928
+For n_clusters=4, The Silhouette Coefficient is 0.5058578848838806
+For n_clusters=5, The Silhouette Coefficient is 0.5306551456451416
+For n_clusters=6, The Silhouette Coefficient is 0.5236276984214783
+For n_clusters=7, The Silhouette Coefficient is 0.5298376679420471
+For n_clusters=8, The Silhouette Coefficient is 0.5377109050750732
+For n_clusters=9, The Silhouette Coefficient is 0.5261747241020203
+For n_clusters=10, The Silhouette Coefficient is 0.5128872990608215
+For n_clusters=11, The Silhouette Coefficient is 0.5204099416732788
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7757139801979065
+For n_clusters=3, The Silhouette Coefficient is 0.6351085305213928
+For n_clusters=4, The Silhouette Coefficient is 0.5058578848838806
+For n_clusters=5, The Silhouette Coefficient is 0.5306551456451416
+For n_clusters=6, The Silhouette Coefficient is 0.5236276984214783
+For n_clusters=7, The Silhouette Coefficient is 0.5298376679420471
+For n_clusters=8, The Silhouette Coefficient is 0.5377109050750732
+For n_clusters=9, The Silhouette Coefficient is 0.5261747241020203
+For n_clusters=10, The Silhouette Coefficient is 0.5128872990608215
+For n_clusters=11, The Silhouette Coefficient is 0.5204099416732788
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.7757139801979065
+For n_clusters=3, The Silhouette Coefficient is 0.6351085305213928
+For n_clusters=4, The Silhouette Coefficient is 0.5058578848838806
+For n_clusters=5, The Silhouette Coefficient is 0.5306551456451416
+For n_clusters=6, The Silhouette Coefficient is 0.5236276984214783
+For n_clusters=7, The Silhouette Coefficient is 0.5298376679420471
+For n_clusters=8, The Silhouette Coefficient is 0.5377109050750732
+For n_clusters=9, The Silhouette Coefficient is 0.5261747241020203
+For n_clusters=10, The Silhouette Coefficient is 0.5128872990608215
+For n_clusters=11, The Silhouette Coefficient is 0.5204099416732788
+Finished WCSS and Elbow method for choosing the number of clusters
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading preprocessed data
+Finished reading preprocessed data
+Author column was dropped
