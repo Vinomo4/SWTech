@@ -1,2 +1,685 @@
 -------------------------DATA UNDERSTANDING-------------------------
 Finished importing libraries
+-------------------------CLUSTERING-------------------------
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Reading files
+Finished reading files
+Defining path to data files
+Reading files
+Finished reading files
+Starting normalizing data
+Starting normalizing data
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Starting normalizing data
+Starting normalizing data
+Starting normalizing data
+Finished normalizing data
+-------------------------CLUSTERING-------------------------
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Starting WCSS and Elbow method for choosing the number of clusters
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.3998550435096592
+For n_clusters=4, The Silhouette Coefficient is 0.3604453930538431
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.29640252841863546
+For n_clusters=7, The Silhouette Coefficient is 0.28903107022870034
+For n_clusters=8, The Silhouette Coefficient is 0.29452455536639566
+For n_clusters=9, The Silhouette Coefficient is 0.2962977186493712
+For n_clusters=10, The Silhouette Coefficient is 0.3037094182908546
+For n_clusters=11, The Silhouette Coefficient is 0.27443145196240765
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+PCA components:11
+explained variance in PCA:0.9615438740717853
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.695668041470835
+For n_clusters=3, The Silhouette Coefficient is 0.3140249511839668
+For n_clusters=4, The Silhouette Coefficient is 0.37159368843892127
+For n_clusters=5, The Silhouette Coefficient is 0.38855837958644646
+For n_clusters=6, The Silhouette Coefficient is 0.33396720367748883
+For n_clusters=7, The Silhouette Coefficient is 0.3344737331375884
+For n_clusters=8, The Silhouette Coefficient is 0.3328441907287204
+For n_clusters=9, The Silhouette Coefficient is 0.3354569658997263
+For n_clusters=10, The Silhouette Coefficient is 0.2937773429208422
+For n_clusters=11, The Silhouette Coefficient is 0.30670936492058337
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.3998550435096592
+For n_clusters=4, The Silhouette Coefficient is 0.34111591487428633
+For n_clusters=5, The Silhouette Coefficient is 0.3068003138652874
+For n_clusters=6, The Silhouette Coefficient is 0.2947270646798589
+For n_clusters=7, The Silhouette Coefficient is 0.29045297335312786
+For n_clusters=8, The Silhouette Coefficient is 0.2769149794117373
+For n_clusters=9, The Silhouette Coefficient is 0.3193120660476567
+For n_clusters=10, The Silhouette Coefficient is 0.2936220425703158
+For n_clusters=11, The Silhouette Coefficient is 0.277631617630902
+Finished WCSS and Elbow method for choosing the number of clusters
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Starting normalizing data
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.5839363336156875
+For n_clusters=3, The Silhouette Coefficient is 0.5834104305092586
+For n_clusters=4, The Silhouette Coefficient is 0.5436212969196448
+For n_clusters=5, The Silhouette Coefficient is 0.3021014480546973
+For n_clusters=6, The Silhouette Coefficient is 0.23027447752002822
+For n_clusters=7, The Silhouette Coefficient is 0.28319856613857136
+For n_clusters=8, The Silhouette Coefficient is 0.25564393193540497
+For n_clusters=9, The Silhouette Coefficient is 0.26169790970718154
+For n_clusters=10, The Silhouette Coefficient is 0.2958308559074123
+For n_clusters=11, The Silhouette Coefficient is 0.2574783422942394
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.5839363336156875
+For n_clusters=3, The Silhouette Coefficient is 0.5803913785805984
+For n_clusters=4, The Silhouette Coefficient is 0.5436212969196448
+For n_clusters=5, The Silhouette Coefficient is 0.22232406374764122
+For n_clusters=6, The Silhouette Coefficient is 0.22765190755702236
+For n_clusters=7, The Silhouette Coefficient is 0.2793390175732846
+For n_clusters=8, The Silhouette Coefficient is 0.25760286804831656
+For n_clusters=9, The Silhouette Coefficient is 0.2771093851892445
+For n_clusters=10, The Silhouette Coefficient is 0.22342458096733706
+For n_clusters=11, The Silhouette Coefficient is 0.2264836654957241
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.5839363336156875
+For n_clusters=3, The Silhouette Coefficient is 0.5834104305092586
+For n_clusters=4, The Silhouette Coefficient is 0.5436212969196448
+For n_clusters=5, The Silhouette Coefficient is 0.24832255252476576
+For n_clusters=6, The Silhouette Coefficient is 0.26177745226202825
+For n_clusters=7, The Silhouette Coefficient is 0.2645753808990708
+For n_clusters=8, The Silhouette Coefficient is 0.2139882629232608
+For n_clusters=9, The Silhouette Coefficient is 0.27128015686302254
+For n_clusters=10, The Silhouette Coefficient is 0.2808706592456003
+For n_clusters=11, The Silhouette Coefficient is 0.28223093435824165
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+PCA components:14
+explained variance in PCA:0.962128153000453
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6007569709646243
+For n_clusters=3, The Silhouette Coefficient is 0.6012210342191344
+For n_clusters=4, The Silhouette Coefficient is 0.5569138008643473
+For n_clusters=5, The Silhouette Coefficient is 0.271179994714946
+For n_clusters=6, The Silhouette Coefficient is 0.2706437325775833
+For n_clusters=7, The Silhouette Coefficient is 0.280603906277109
+For n_clusters=8, The Silhouette Coefficient is 0.22765014537115175
+For n_clusters=9, The Silhouette Coefficient is 0.2877950138687135
+For n_clusters=10, The Silhouette Coefficient is 0.3066781405962102
+For n_clusters=11, The Silhouette Coefficient is 0.2067923861476973
+Finished WCSS and Elbow method for choosing the number of clusters
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.5839363336156875
+For n_clusters=3, The Silhouette Coefficient is 0.5834104305092586
+For n_clusters=4, The Silhouette Coefficient is 0.5695934442861573
+For n_clusters=5, The Silhouette Coefficient is 0.22232406374764122
+For n_clusters=6, The Silhouette Coefficient is 0.2622780467317939
+For n_clusters=7, The Silhouette Coefficient is 0.26303287476942966
+For n_clusters=8, The Silhouette Coefficient is 0.21538859770370386
+For n_clusters=9, The Silhouette Coefficient is 0.2693742369392423
+For n_clusters=10, The Silhouette Coefficient is 0.2024223357064033
+For n_clusters=11, The Silhouette Coefficient is 0.23402834853499632
+Finished WCSS and Elbow method for choosing the number of clusters
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Starting normalizing data
+Starting normalizing data
+Finished normalizing data
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.358604886515384
+For n_clusters=5, The Silhouette Coefficient is 0.36503032433056604
+For n_clusters=6, The Silhouette Coefficient is 0.2943267359247607
+For n_clusters=7, The Silhouette Coefficient is 0.29119714209577796
+For n_clusters=8, The Silhouette Coefficient is 0.2920147246399086
+For n_clusters=9, The Silhouette Coefficient is 0.2846528408050665
+For n_clusters=10, The Silhouette Coefficient is 0.2886259825836354
+For n_clusters=11, The Silhouette Coefficient is 0.29345686709287294
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.38544574302183937
+For n_clusters=4, The Silhouette Coefficient is 0.34111591487428633
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2968214897249405
+For n_clusters=7, The Silhouette Coefficient is 0.3103562548277977
+For n_clusters=8, The Silhouette Coefficient is 0.30601633584940996
+For n_clusters=9, The Silhouette Coefficient is 0.3008056682053359
+For n_clusters=10, The Silhouette Coefficient is 0.2771655676420697
+For n_clusters=11, The Silhouette Coefficient is 0.29675356659251484
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+PCA components:11
+explained variance in PCA:0.9615438740717853
+Finished computing PCA
+Starting to compute PCA
+Performing PCA on dataset ...
+PCA components:11
+explained variance in PCA:0.9615438740717853
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.695668041470835
+For n_clusters=3, The Silhouette Coefficient is 0.4209688245789928
+For n_clusters=4, The Silhouette Coefficient is 0.36851317679258144
+For n_clusters=5, The Silhouette Coefficient is 0.34465886072518803
+For n_clusters=6, The Silhouette Coefficient is 0.3510870079904924
+For n_clusters=7, The Silhouette Coefficient is 0.3333465488844392
+For n_clusters=8, The Silhouette Coefficient is 0.3328441907287204
+For n_clusters=9, The Silhouette Coefficient is 0.2999048943558136
+For n_clusters=10, The Silhouette Coefficient is 0.34016744620762007
+For n_clusters=11, The Silhouette Coefficient is 0.3311757156722585
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.2976598067824091
+For n_clusters=4, The Silhouette Coefficient is 0.3227150034061291
+For n_clusters=5, The Silhouette Coefficient is 0.3302696376940153
+For n_clusters=6, The Silhouette Coefficient is 0.29640252841863546
+For n_clusters=7, The Silhouette Coefficient is 0.2934003199415531
+For n_clusters=8, The Silhouette Coefficient is 0.2934477788185986
+For n_clusters=9, The Silhouette Coefficient is 0.260929969462238
+For n_clusters=10, The Silhouette Coefficient is 0.26392467477821674
+For n_clusters=11, The Silhouette Coefficient is 0.2670296279949636
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Starting to compute PCA
+Performing PCA on dataset ...
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.36408441907949607
+For n_clusters=5, The Silhouette Coefficient is 0.3067032090896781
+For n_clusters=6, The Silhouette Coefficient is 0.2968214897249405
+For n_clusters=7, The Silhouette Coefficient is 0.2907376582647042
+For n_clusters=8, The Silhouette Coefficient is 0.2899304187094686
+For n_clusters=9, The Silhouette Coefficient is 0.2928830261916321
+For n_clusters=10, The Silhouette Coefficient is 0.2971857716609834
+For n_clusters=11, The Silhouette Coefficient is 0.2922779181639795
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605284
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706108
+For n_clusters=3, The Silhouette Coefficient is 0.31851428814524074
+For n_clusters=4, The Silhouette Coefficient is 0.37327481424454795
+For n_clusters=5, The Silhouette Coefficient is 0.3504274439686777
+For n_clusters=6, The Silhouette Coefficient is 0.3411333792423236
+For n_clusters=7, The Silhouette Coefficient is 0.33312627131761774
+For n_clusters=8, The Silhouette Coefficient is 0.29400751265565095
+For n_clusters=9, The Silhouette Coefficient is 0.3365293256212022
+For n_clusters=10, The Silhouette Coefficient is 0.3320356444202392
+For n_clusters=11, The Silhouette Coefficient is 0.3117861923326256
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.3998550435096592
+For n_clusters=4, The Silhouette Coefficient is 0.3692887495001189
+For n_clusters=5, The Silhouette Coefficient is 0.3557619272007924
+For n_clusters=6, The Silhouette Coefficient is 0.29830136955524034
+For n_clusters=7, The Silhouette Coefficient is 0.2900350975505268
+For n_clusters=8, The Silhouette Coefficient is 0.2963294299464955
+For n_clusters=9, The Silhouette Coefficient is 0.28664608751339266
+For n_clusters=10, The Silhouette Coefficient is 0.2701459889634237
+For n_clusters=11, The Silhouette Coefficient is 0.2826063763898607
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605284
+Finished computing PCA
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9615438740717853
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.695668041470835
+For n_clusters=3, The Silhouette Coefficient is 0.4209688245789928
+For n_clusters=4, The Silhouette Coefficient is 0.3862092010215871
+For n_clusters=5, The Silhouette Coefficient is 0.34465886072518803
+For n_clusters=6, The Silhouette Coefficient is 0.3345689501835857
+For n_clusters=7, The Silhouette Coefficient is 0.32646503761079826
+For n_clusters=8, The Silhouette Coefficient is 0.3506282926761173
+For n_clusters=9, The Silhouette Coefficient is 0.3302819092381814
+For n_clusters=10, The Silhouette Coefficient is 0.31380987170518065
+For n_clusters=11, The Silhouette Coefficient is 0.31313437308207037
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605284
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706108
+For n_clusters=3, The Silhouette Coefficient is 0.42559804698760906
+For n_clusters=4, The Silhouette Coefficient is 0.37239452203383994
+For n_clusters=5, The Silhouette Coefficient is 0.392837630697962
+For n_clusters=6, The Silhouette Coefficient is 0.3411333792423236
+For n_clusters=7, The Silhouette Coefficient is 0.3557925208480682
+For n_clusters=8, The Silhouette Coefficient is 0.33878722988686155
+For n_clusters=9, The Silhouette Coefficient is 0.3378538756759941
+For n_clusters=10, The Silhouette Coefficient is 0.3301454287650194
+For n_clusters=11, The Silhouette Coefficient is 0.2943173874748831
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9615438740717853
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.695668041470835
+For n_clusters=3, The Silhouette Coefficient is 0.40682733318832603
+For n_clusters=4, The Silhouette Coefficient is 0.38719496851731533
+For n_clusters=5, The Silhouette Coefficient is 0.33968212201045556
+For n_clusters=6, The Silhouette Coefficient is 0.33320607642953654
+For n_clusters=7, The Silhouette Coefficient is 0.308368538203964
+For n_clusters=8, The Silhouette Coefficient is 0.3604282460805574
+For n_clusters=9, The Silhouette Coefficient is 0.32876558545397194
+For n_clusters=10, The Silhouette Coefficient is 0.32175777916443793
+For n_clusters=11, The Silhouette Coefficient is 0.30268326593401645
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605284
+Finished computing PCA
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.3998550435096592
+For n_clusters=4, The Silhouette Coefficient is 0.3551405005744264
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2968214897249405
+For n_clusters=7, The Silhouette Coefficient is 0.2900350975505268
+For n_clusters=8, The Silhouette Coefficient is 0.29173003972833217
+For n_clusters=9, The Silhouette Coefficient is 0.27787014153901957
+For n_clusters=10, The Silhouette Coefficient is 0.2882020194361214
+For n_clusters=11, The Silhouette Coefficient is 0.3085417185022813
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605284
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706108
+For n_clusters=3, The Silhouette Coefficient is 0.42559804698760906
+For n_clusters=4, The Silhouette Coefficient is 0.3717137150758175
+For n_clusters=5, The Silhouette Coefficient is 0.39358642873566735
+For n_clusters=6, The Silhouette Coefficient is 0.3411333792423236
+For n_clusters=7, The Silhouette Coefficient is 0.34224870763643994
+For n_clusters=8, The Silhouette Coefficient is 0.34011177994165337
+For n_clusters=9, The Silhouette Coefficient is 0.3165522136550054
+For n_clusters=10, The Silhouette Coefficient is 0.3006953094574739
+For n_clusters=11, The Silhouette Coefficient is 0.3023246980442974
+Finished WCSS and Elbow method for choosing the number of clusters
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.36408441907949607
+For n_clusters=5, The Silhouette Coefficient is 0.35460132692146373
+For n_clusters=6, The Silhouette Coefficient is 0.29587304887968824
+For n_clusters=7, The Silhouette Coefficient is 0.28903107022870034
+For n_clusters=8, The Silhouette Coefficient is 0.2946773863167574
+For n_clusters=9, The Silhouette Coefficient is 0.2741117221309617
+For n_clusters=10, The Silhouette Coefficient is 0.2833490496226333
+For n_clusters=11, The Silhouette Coefficient is 0.2698274663901414
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.3998550435096592
+For n_clusters=4, The Silhouette Coefficient is 0.34654899285572444
+For n_clusters=5, The Silhouette Coefficient is 0.3794288576368993
+For n_clusters=6, The Silhouette Coefficient is 0.29700623461745357
+For n_clusters=7, The Silhouette Coefficient is 0.2907376582647042
+For n_clusters=8, The Silhouette Coefficient is 0.3080534234406674
+For n_clusters=9, The Silhouette Coefficient is 0.2973271406032217
+For n_clusters=10, The Silhouette Coefficient is 0.2793152679530401
+For n_clusters=11, The Silhouette Coefficient is 0.27208221568659924
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.3998550435096592
+For n_clusters=4, The Silhouette Coefficient is 0.36784952116111425
+For n_clusters=5, The Silhouette Coefficient is 0.3068003138652874
+For n_clusters=6, The Silhouette Coefficient is 0.2966481449338156
+For n_clusters=7, The Silhouette Coefficient is 0.2934003199415531
+For n_clusters=8, The Silhouette Coefficient is 0.32023133812974713
+For n_clusters=9, The Silhouette Coefficient is 0.29669337513588023
+For n_clusters=10, The Silhouette Coefficient is 0.2936589463529553
+For n_clusters=11, The Silhouette Coefficient is 0.26901579000563
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.3998550435096592
+For n_clusters=4, The Silhouette Coefficient is 0.34111591487428633
+For n_clusters=5, The Silhouette Coefficient is 0.3068003138652874
+For n_clusters=6, The Silhouette Coefficient is 0.2661267093368915
+For n_clusters=7, The Silhouette Coefficient is 0.306776357065463
+For n_clusters=8, The Silhouette Coefficient is 0.29974372231943486
+For n_clusters=9, The Silhouette Coefficient is 0.27074188053187936
+For n_clusters=10, The Silhouette Coefficient is 0.23668073551201793
+For n_clusters=11, The Silhouette Coefficient is 0.3140024247348543
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.3998550435096592
+For n_clusters=4, The Silhouette Coefficient is 0.3419746597707516
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.29700623461745357
+For n_clusters=7, The Silhouette Coefficient is 0.2967072779504582
+For n_clusters=8, The Silhouette Coefficient is 0.2970648591535384
+For n_clusters=9, The Silhouette Coefficient is 0.2754497548268582
+For n_clusters=10, The Silhouette Coefficient is 0.3234368433487141
+For n_clusters=11, The Silhouette Coefficient is 0.2863368995475315
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.3998550435096592
+For n_clusters=4, The Silhouette Coefficient is 0.34654899285572444
+For n_clusters=5, The Silhouette Coefficient is 0.35925677966068736
+For n_clusters=6, The Silhouette Coefficient is 0.2951796179520073
+For n_clusters=7, The Silhouette Coefficient is 0.2964566843272117
+For n_clusters=8, The Silhouette Coefficient is 0.2973255110401026
+For n_clusters=9, The Silhouette Coefficient is 0.2474132530501995
+For n_clusters=10, The Silhouette Coefficient is 0.26766612751038416
+For n_clusters=11, The Silhouette Coefficient is 0.2948809739203403
+Finished WCSS and Elbow method for choosing the number of clusters
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Starting normalizing data
+Finished normalizing data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605284
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706108
+For n_clusters=3, The Silhouette Coefficient is 0.4114604226365799
+For n_clusters=4, The Silhouette Coefficient is 0.3287021161389183
+For n_clusters=5, The Silhouette Coefficient is 0.3504274439686777
+For n_clusters=6, The Silhouette Coefficient is 0.3411333792423236
+For n_clusters=7, The Silhouette Coefficient is 0.33312627131761774
+For n_clusters=8, The Silhouette Coefficient is 0.3337174655107516
+For n_clusters=9, The Silhouette Coefficient is 0.3213745398585172
+For n_clusters=10, The Silhouette Coefficient is 0.33556082305029844
+For n_clusters=11, The Silhouette Coefficient is 0.33703018532903906
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605284
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706108
+For n_clusters=3, The Silhouette Coefficient is 0.4114604226365799
+For n_clusters=4, The Silhouette Coefficient is 0.3287021161389183
+For n_clusters=5, The Silhouette Coefficient is 0.3504274439686777
+For n_clusters=6, The Silhouette Coefficient is 0.3411333792423236
+For n_clusters=7, The Silhouette Coefficient is 0.33312627131761774
+For n_clusters=8, The Silhouette Coefficient is 0.3337174655107516
+For n_clusters=9, The Silhouette Coefficient is 0.3213745398585172
+For n_clusters=10, The Silhouette Coefficient is 0.33556082305029844
+For n_clusters=11, The Silhouette Coefficient is 0.33703018532903906
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.5839363336156875
+For n_clusters=3, The Silhouette Coefficient is 0.5834104305092586
+For n_clusters=4, The Silhouette Coefficient is 0.5423950212567086
+For n_clusters=5, The Silhouette Coefficient is 0.22564803791373178
+For n_clusters=6, The Silhouette Coefficient is 0.2748106408134542
+For n_clusters=7, The Silhouette Coefficient is 0.2509510080528774
+For n_clusters=8, The Silhouette Coefficient is 0.2862452521231552
+For n_clusters=9, The Silhouette Coefficient is 0.27337696271900913
+For n_clusters=10, The Silhouette Coefficient is 0.28345170156956384
+For n_clusters=11, The Silhouette Coefficient is 0.20966229607048048
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6778298218106921
+For n_clusters=3, The Silhouette Coefficient is 0.40718049967832337
+For n_clusters=4, The Silhouette Coefficient is 0.34062664910562956
+For n_clusters=5, The Silhouette Coefficient is 0.3111901670916891
+For n_clusters=6, The Silhouette Coefficient is 0.2977245503937253
+For n_clusters=7, The Silhouette Coefficient is 0.2948110411710132
+For n_clusters=8, The Silhouette Coefficient is 0.30005655882132404
+For n_clusters=9, The Silhouette Coefficient is 0.2811430329269445
+For n_clusters=10, The Silhouette Coefficient is 0.29835628635491696
+For n_clusters=11, The Silhouette Coefficient is 0.28237616437382673
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9538823881605284
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/K-means already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/K-means
+For n_clusters=2, The Silhouette Coefficient is 0.6979909292706108
+For n_clusters=3, The Silhouette Coefficient is 0.4114604226365799
+For n_clusters=4, The Silhouette Coefficient is 0.3287021161389183
+For n_clusters=5, The Silhouette Coefficient is 0.3504274439686777
+For n_clusters=6, The Silhouette Coefficient is 0.3411333792423236
+For n_clusters=7, The Silhouette Coefficient is 0.33312627131761774
+For n_clusters=8, The Silhouette Coefficient is 0.3337174655107516
+For n_clusters=9, The Silhouette Coefficient is 0.3213745398585172
+For n_clusters=10, The Silhouette Coefficient is 0.33556082305029844
+For n_clusters=11, The Silhouette Coefficient is 0.33703018532903906
+Finished WCSS and Elbow method for choosing the number of clusters
