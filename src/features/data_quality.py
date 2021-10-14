@@ -25,7 +25,7 @@ def initialize_doc(filename,dataset_name):
     if dataset_name == "Sonar measures": tests = '\n · '.join(["Foreign key constraint","Presence of NAs","Duplicated rows"])
     elif dataset_name == "Sonar issues": tests = '\n · '.join(["Presence of NAs","Duplicated rows"])
     elif dataset_name == "Sonar analysis": tests = '\n · '.join(["Primary key constraint","Foreign key constraint","Duplicated rows"])
-    elif dataset_name == "Jira issues": tests = '\n · '.join(["Foreign key constraint","Duplicated rows"])
+    elif dataset_name == "Jira issues": tests = 'Foreign key constraint'
     elif dataset_name == "Git commits": tests = '\n · '.join(["Primary key constraint","Date range of commits","Number of missing authors","Duplicated rows"])
     elif dataset_name == "Git commits changes": tests = '\n · '.join(["Date range of commits","Foreign key constraint","Presence of NAs","Duplicated rows"])
     intro = '\n · '.join([title_and_summary,tests + "\n"+ separator])

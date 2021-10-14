@@ -37,8 +37,8 @@ def analyse_categorical_variables(table_names, variable_names, dataframes):
     table = PrettyTable()
     table.field_names = ["Table name", "Variable name", "Number of levels", "Types"]
     for i in range(len(table_names)):
-        for j in range(len(variable_names)):
-            table.add_row([table_names[i], variable_names[j], len(dataframes[i][variable_names[j]].unique()), dataframes[i][variable_names[j]].unique()])
+        for j in range(len(variable_names[i])):
+            table.add_row([table_names[i], variable_names[i][j], len(dataframes[i][variable_names[i][j]].unique()), dataframes[i][variable_names[i][j]].unique()])
     print(table)
 
 def one_hot_encoding(table, variable):
