@@ -13,10 +13,14 @@ The test(s) that will be performed for the SONAR MEASURES table are:
  · The columns that contain NAs are:
       complexity → 0.042%
       cognitive_complexity → 0.042%
+      class_complexity → 0.042%
       coverage → 0.051%
       duplicated_lines_density → 0.039%
       files → 0.039%
       comment_lines_density → 0.039%
+      function_complexity → 0.042%
+      file_complexity → 0.042%
+      new_sqale_debt_ratio → 0.0195%
 ----------------------------------------
 ########## DUPLICATED TEST RESULTS ##########
  · There aren't any duplicated rows.
