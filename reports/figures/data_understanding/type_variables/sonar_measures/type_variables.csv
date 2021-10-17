@@ -2,7 +2,6 @@
 analysis_key,object
 complexity,float64
 cognitive_complexity,float64
-class_complexity,float64
 coverage,float64
 duplicated_blocks,int64
 duplicated_files,int64
@@ -25,10 +24,3 @@ vulnerabilities,int64
 security_rating,int64
 files,float64
 comment_lines_density,float64
-function_complexity,float64
-file_complexity,float64
-alert_status,object
-effort_to_reach_maintainability_rating_a,int64
-new_sqale_debt_ratio,float64
-security_remediation_effort,int64
-reliability_remediation_effort,int64

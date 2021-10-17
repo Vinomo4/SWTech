@@ -25,9 +25,11 @@ def initialize_doc(filename,dataset_name):
     if dataset_name == "Sonar measures": tests = '\n · '.join(["Foreign key constraint","Presence of NAs","Duplicated rows"])
     elif dataset_name == "Sonar issues": tests = '\n · '.join(["Presence of NAs","Duplicated rows"])
     elif dataset_name == "Sonar analysis": tests = '\n · '.join(["Primary key constraint","Foreign key constraint","Duplicated rows"])
-    elif dataset_name == "Jira issues": tests = 'Foreign key constraint'
+    elif dataset_name == "Jira issues": tests = '\n · '.join(['Foreign key constraint',"Number of authors of interest"])
     elif dataset_name == "Git commits": tests = '\n · '.join(["Primary key constraint","Date range of commits","Number of missing authors","Duplicated rows"])
     elif dataset_name == "Git commits changes": tests = '\n · '.join(["Date range of commits","Foreign key constraint","Presence of NAs","Duplicated rows"])
+    elif dataset_name == "Szz fault inducing commits": tests = "Number of authors of interest"
+    elif dataset_name == "Refactoring miner": tests = "Number of authors of interest"
     intro = '\n · '.join([title_and_summary,tests + "\n"+ separator])
     # Finally the intro is written into the file.
     f = open(path+filename, "w")
@@ -214,4 +216,28 @@ def check_duplicates(dataset):
     if not num_duplicated:
         result = "There aren't any duplicated rows."
     else: result = "There are " + str(round(num_duplicated/len(dataset)*100,3)) + " % of duplicated rows."
+    return result
+
+def check_matching(ref_set,table,column):
+    '''
+    Objective:
+        - Compute the number of unique elements that are present on the provided checklist
+        for an specific column of a dataframe.
+    Input:
+        - ref_list: Set containg the reference values of interest.
+        - table : Dataframe that wants to be used.
+        - column : Name of the variable that contains the values to check.
+    Output:
+        For columns with all matching values:
+            - String indicating that there isn't any problem.
+        For columns with non-matching values:
+            - String indicating the number of elements that match and the percentatge regarding the
+            length of "ref_list"
+    '''
+    col_vals = set(table[column])
+    num_matching = len(col_vals.intersection(ref_set))
+    if num_matching == len(col_vals):
+        result = "The table contains inforation about all authors of interest."
+    else:
+        result = "There are " + str(num_matching) +" authors of interest, which represents the " +str(round(num_matching/len(ref_set)*100,4)) + " % from the total authors of interest"
     return result

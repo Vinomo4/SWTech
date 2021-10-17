@@ -1,0 +1,9 @@
+---------- SZZ FAULT INDUCING COMMITS QUALITY ANALYSIS ----------
+
+
+The test(s) that will be performed for the SZZ FAULT INDUCING COMMITS table are:
+ · Number of authors of interest
+--------------------------------------------------------------------------------
+########## AUTHORS OF INTEREST TEST RESULTS ##########
+ · There are 21 authors of interest, which represents the 8.6066 % from the total authors of interest
+----------------------------------------
