@@ -182,3 +182,12 @@ Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
 Starting joining SONAR tables
 Finishing joining SONAR tables
 Starting joining COMMIT tables
+Defining path to data files
+Reading files
+Finished reading files
+Defining path to data files
+Reading files
+Finished reading files
+Defining path to data files
+Reading files
+Finished reading files
