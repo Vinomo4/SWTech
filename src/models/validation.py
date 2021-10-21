@@ -1,6 +1,3 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
-# %%
 # Import libraries and packages
 import os
 import pandas as pd
@@ -18,37 +15,20 @@ from validation import save_plot, plot_quality_metrics
 
 track("-"*25 + "VALIDATION" + "-"*25)
 
-# %% [markdown]
-# # Reading data
-# #### Define path to data files
-
-# %%
+# Define path to data files
 track("Defining path to data files")
-
 # Define base path to data files
 path = '../../temp_data/'
-
 # Define path to the model_data_with_clusters table
 path_clusters_data = path + 'model_data_with_clusters.csv'
-
 # Ensure the input file exist
 assert os.path.isfile(path_clusters_data), f'{path_clusters_data} not found. Is it a file?'
 
-# %% [markdown]
-# #### Read the files
-
-# %%
 track("Reading files")
-
 # Read clusterized data 
 clusterized_data = pd.read_csv(path_clusters_data)
-
 track("Finished reading files")
 
-# %% [markdown]
-# # Validation
-
-# %%
 track("Creating average quality dataset")
 average_quality = (clusterized_data.groupby('clusters').agg(blocker_violations_mean = ('blocker_violations', 'mean'),
                                           blocker_violations_std = ('blocker_violations', 'std'),
@@ -74,8 +54,6 @@ average_quality = (clusterized_data.groupby('clusters').agg(blocker_violations_m
                                           minor_std = ('minor', 'std'))).reset_index()
 track("Finished creating average quality dataset")
 
-
-# %%
 track("Creating quality rating")
 quality_rating_data = clusterized_data.groupby('clusters').agg({
     'violations': 'sum',
@@ -92,9 +70,6 @@ quality_rating_data = clusterized_data.groupby('clusters').agg({
                             'vulnerabilities': 'sum',
                             'sqale_debt_ratio': 'mean',
 }).reset_index()
-
-
-# %%
 # Calculate ponderated mean of the violations variables
 violations = quality_rating_data[["blocker_violations", "critical_violations", "major_violations", "minor_violations"]] 
 violations = violations*[0.5, 0.4, 0.07, 0.03]
@@ -113,35 +88,22 @@ quality_rating_data
 quality_rating_data = quality_rating_data[["violations", "code_smells",	"bugs",	"vulnerabilities",	"severity"]]
 quality_rating_data
 suma = np.sum(quality_rating_data, axis=1)
-
 total = np.sum(suma)
 quality_rating = suma/total
 track("Finished creating quality rating")
 
-
-# %%
 track("Creating plots of quality metrics")
 # There will be three different plots. It is necessary to create the groups of the variables to be printed in the same plot 
 violation_metrics = ["blocker_violations", "critical_violations", "major_violations", "minor_violations"]
 severity_metrics = ["blocker", "critical", "major", "minor"]
 other_metrics = ["code_smells", "bugs", "vulnerabilities"]
 
-
-# %%
 # Order the quality rating from the best cluster to the words one. It allows to compare the values from the cluster with highest quality rating to the lowest one.
 average_quality['quality_rating'] = quality_rating
 sorted_average_quality = average_quality.sort_values(by=['quality_rating'],ascending = False)
 
-
-# %%
 plot_quality_metrics(sorted_average_quality, violation_metrics, [0, 5000, 10000, 15000, 20000, 25000])
-
-
-# %%
 plot_quality_metrics(sorted_average_quality, severity_metrics, [-1000, -500, 0, 500, 1000, 1500, 2000, 2500])
-
-
-# %%
 plot_quality_metrics(sorted_average_quality, other_metrics, [0, 5000, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000])
 track("Finished creating plots of quality metrics")
 
