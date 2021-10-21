@@ -3,26 +3,22 @@
 import numpy as np
 import pandas as pd
 import os
+import sys
 import collections
 from datetime import datetime
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
 
-# Import sys 
+# Import sys
 
 # Define path with .py codes containing functions used in this script
-#os.getcwd()
+sys.path.append('.')
 
-os.chdir( 'src/features/')
-
-print(os.getcwd())
-# Import useful functions for this script  
-from features.tracking import track
-from features.basic_statistics import save_outputs, describe_variables, bar_plot, plot_histogram, plot_correlations
-from features.data_quality import initialize_doc, write_test_results, write_extra_info, check_PK, check_NAs, check_missing_authors, check_dates, check_FK, check_duplicates, check_matching
-from features.preparation_data import delete_na,change_commits_to_authors
-
-print(os.getcwd())
+# Import useful functions for this script
+from tracking import track
+from basic_statistics import save_outputs, describe_variables, bar_plot, plot_histogram, plot_correlations
+from data_quality import initialize_doc, write_test_results, write_extra_info, check_PK, check_NAs, check_missing_authors, check_dates, check_FK, check_duplicates, check_matching
+from preparation_data import delete_na,change_commits_to_authors
 
 # Initializing the tracking file
 if os.path.exists('../../reports/tracking/track.txt'):
@@ -41,7 +37,7 @@ path2 = "../data/raw/"
 
 # Define path to the tables that will be used in this project
 # These are: GIT_COMMITS_CHANGES, GIT_COMMITS, JIRA_ISSUES, SONAR_ANALYSIS, SONAR_ISSUES, and SONAR_MEASURES tables
-path_git_commits_changes = path2 + 'GIT_COMMITS_CHANGES.csv'
+path_git_commits_changes = path1 + 'GIT_COMMITS_CHANGES.csv'
 path_git_commits = path1 + 'GIT_COMMITS.csv'
 path_jira_issues = path1 + 'JIRA_ISSUES.csv'
 path_sonar_analysis = path1 + 'SONAR_ANALYSIS.csv'
@@ -52,7 +48,7 @@ path_ref_min = path1 + 'REFACTORING_MINER.csv'
 
 
 # Ensure the input file exist
-assert os.path.isfile("../" + path_git_commits_changes), f'{path_git_commits_changes} not found. Is it a file?'
+assert os.path.isfile(path_git_commits_changes), f'{path_git_commits_changes} not found. Is it a file?'
 assert os.path.isfile(path_git_commits), f'{path_git_commits} not found. Is it a file?'
 assert os.path.isfile(path_jira_issues), f'{path_jira_issues} not found. Is it a file?'
 assert os.path.isfile(path_sonar_analysis), f'{path_sonar_analysis} not found. Is it a file?'
@@ -88,8 +84,8 @@ git_commits_names = ['PROJECT_ID','COMMIT_HASH','AUTHOR','AUTHOR_DATE','AUTHOR_T
 jira_issues_names = ['HASH']
 sonar_analysis_names = ['PROJECT_ID','ANALYSIS_KEY','REVISION']
 sonar_issues_names = ['CREATION_ANALYSIS_KEY','SEVERITY','STATUS','EFFORT','MESSAGE','START_LINE','END_LINE','CLOSE_ANALYSIS_KEY']
-sonar_measures_names = ['analysis_key','complexity' ,'cognitive_complexity', 'coverage', 'duplicated_blocks', 'duplicated_files', 
-                        'duplicated_lines_density', 'violations','blocker_violations','critical_violations','major_violations','minor_violations','info_violations','false_positive_issues','open_issues','reopened_issues','confirmed_issues', 'sqale_debt_ratio','code_smells','bugs','reliability_rating','vulnerabilities','security_rating','files', 'comment_lines_density']           
+sonar_measures_names = ['analysis_key','complexity' ,'cognitive_complexity', 'coverage', 'duplicated_blocks', 'duplicated_files',
+                        'duplicated_lines_density', 'violations','blocker_violations','critical_violations','major_violations','minor_violations','info_violations','false_positive_issues','open_issues','reopened_issues','confirmed_issues', 'sqale_debt_ratio','code_smells','bugs','reliability_rating','vulnerabilities','security_rating','files', 'comment_lines_density']
 
 
 # Select attributes of interest according to the defined lists above
@@ -101,8 +97,6 @@ sonar_issues = sonar_issues[sonar_issues_names]
 sonar_measures = sonar_measures[sonar_measures_names]
 
 track("Finished selecting attributes of intereset for each dataframe")
-
-
 
 #### Define numerical types
 track("Defining numerical types...")
@@ -157,9 +151,9 @@ track("Finished defining types of variables")
 track("Starting computing basic statistics for the variables of interest for each table")
 
 # Print basic statistics for the variables of interest of each table
-# For the continuous variables, the metrics studied are: count of non-null observations, mean of values, minimum value, 
-# maximum value, and 25%, 50%, 75% percentiles. 
-# While for the categorical variables, these are count of non-null observations, number of non-null observations, 
+# For the continuous variables, the metrics studied are: count of non-null observations, mean of values, minimum value,
+# maximum value, and 25%, 50%, 75% percentiles.
+# While for the categorical variables, these are count of non-null observations, number of non-null observations,
 # number of unique classes, top class with more occurrences, and frequency of occurrence of the top class.
 
 track("--> Git commits changes")
@@ -201,7 +195,7 @@ bar_plot(sonar_issues["STATUS"],sonar_issues,False,'sonar_issues')
 track('Finished computing and saving the bar plots')
 
 
-# ### Histogram plots 
+# ### Histogram plots
 track('Starting plotting histograms')
 # Plot histogram of all numeric variables in dataframe
 
@@ -226,7 +220,7 @@ plot_histogram(sonar_measures,numerical,'sonar_measures')
 track('Finishing computing and saving the histograms')
 
 
-############## Correlation plots 
+############## Correlation plots
 
 
 track('Starting plotting heatmaps of correlations')
@@ -269,23 +263,15 @@ track('Starting checking data quality')
 ## SONAR MEASURES
 track('--> Sonar measures')
 sonar_measures_txt = "sonar_measures_quality_analysis.txt"
-print(initialize_doc(sonar_measures_txt,"Sonar measures"),end = "")
 t1_result,fk_violations = check_FK(sonar_measures,'analysis_key',sonar_analysis,'ANALYSIS_KEY')
-print(write_test_results(sonar_measures_txt,"FK",[t1_result,fk_violations]),end = "")
 t2_result,_ = check_NAs(sonar_measures,sonar_measures_names)
-print(write_test_results(sonar_measures_txt,"NA",t2_result),end = "")
 t3_result = check_duplicates(sonar_measures)
-print(write_test_results(sonar_measures_txt,"DUPLICATED",t3_result),end = "")
 
 ## SONAR ISSUES
 track('--> Sonar issues')
 sonar_issues_txt = "sonar_issues_quality_analysis.txt"
-print(initialize_doc(sonar_issues_txt,"Sonar issues"),end = "")
 t1_result,NA_columns = check_NAs(sonar_issues, sonar_issues_names)
-print(write_test_results(sonar_issues_txt,"NA",t1_result),end = "")
 t2_result = check_duplicates(sonar_issues)
-print(write_test_results(sonar_issues_txt,"DUPLICATED",t2_result),end = "")
-
 
 # Checking if all the rows that don't have a starting line also don't have an end line.
 
@@ -310,19 +296,15 @@ write_extra_info(sonar_issues_txt,"Extra check: missing values",result,extra_int
 ## SONAR ANALYSIS
 track('--> Sonar analysis')
 sonar_analysis_txt = "sonar_analyisis_quality_analysis.txt"
-print(initialize_doc(sonar_analysis_txt,"Sonar analysis"),end = "")
 t1_result = check_PK(sonar_analysis,'ANALYSIS_KEY')
-print(write_test_results(sonar_analysis_txt,"PK",t1_result),end = "")
 t2_result,fk_violations = check_FK(sonar_analysis,'REVISION',git_commits,'COMMIT_HASH')
-print(write_test_results(sonar_analysis_txt,"FK",[t2_result,fk_violations]),end = "")
 t3_result = check_duplicates(sonar_analysis)
-print(write_test_results(sonar_analysis_txt,"DUPLICATED",t3_result),end = "")
 
 # As problems in the PK were observed, a further quality examination has been performed. After a quick exploration, we noticed the presence of null values as PK in the analysis. Thus, we wanted to evaluate whether this was the only present problem and the number of rows affected by this phenomenon.
 
 extra_intro = "Further exploration on the PK repeated values"
 if len(sonar_analysis[sonar_analysis['ANALYSIS_KEY'].notna()]) == len(sonar_analysis[sonar_analysis['ANALYSIS_KEY'].notna()].ANALYSIS_KEY.unique()):
-    result = "All the repeated values on the PK variable are NAs." 
+    result = "All the repeated values on the PK variable are NAs."
     result = result + "\n"+" "*3 +"The percentage of NA PK is: "+ str(round(sum(sonar_analysis.ANALYSIS_KEY.isna())/len(sonar_analysis)*100,3))+"%."
 else: result = "The repeated values on the PK column are not NAs."
 write_extra_info(sonar_analysis_txt,"Extra check: pk violation",result,extra_intro)
@@ -342,38 +324,25 @@ write_extra_info(sonar_analysis_txt,"Extra check: fk violation",result,extra_int
 ## JIRA ISSUES
 track('--> Jira issues')
 jira_issues_txt = "jira_issues_quality_analysis.txt"
-print(initialize_doc(jira_issues_txt,"Jira issues"),end = "")
 t1_result,fk_violations = check_FK(jira_issues,'HASH',git_commits,'COMMIT_HASH')
-print(write_test_results(jira_issues_txt,"FK",[t1_result,fk_violations]),end = "")
 t2_result = check_duplicates(jira_issues)
-print(write_test_results(jira_issues_txt,"DUPLICATED",t2_result),end = "")
 
 
 ## GIT COMMITS
 track('--> Git commits')
 git_commits_txt = "git_commits_quality_analysis.txt"
-print(initialize_doc(git_commits_txt,"Git commits"),end = "")
 t1_result = check_PK(git_commits,'COMMIT_HASH')
-print(write_test_results(git_commits_txt,"PK",t1_result),end = "")
 t2_result = check_dates(git_commits,'AUTHOR_DATE',datetime.today(),'1999',1)
-print(write_test_results(git_commits_txt,"DATES RANGE",t2_result),end = "")
 t3_result = check_missing_authors(git_commits,'AUTHOR')
-print(write_test_results(git_commits_txt,"MISSING AUTHORS",t3_result),end = "")
 t4_result = check_duplicates(git_commits)
-print(write_test_results(git_commits_txt,"DUPLICATED",t4_result),end = "")
 
 ## GIT COMMITS CHANGES
 track('--> Git commits changes')
 git_commits_changes_txt = "git_commits_changes_quality_analysis.txt"
-print(initialize_doc(git_commits_changes_txt,"Git commits changes"),end = "")
 t1_result = check_dates(git_commits_changes,'DATE',datetime.today(),'1999',2)
-print(write_test_results(git_commits_changes_txt,"DATES RANGE",t1_result),end = "")
 t2_result,fk_violations = check_FK(git_commits_changes,'COMMIT_HASH',git_commits,'COMMIT_HASH')
-print(write_test_results(git_commits_changes_txt,"FK",[t2_result,fk_violations]),end = "")
 t3_result,_ = check_NAs(git_commits_changes,git_commits_changes_names)
-print(write_test_results(git_commits_changes_txt,"NA",t3_result),end = "")
 t4_result = check_duplicates(git_commits_changes)
-print(write_test_results(git_commits_changes_txt,"DUPLICATED",t4_result),end = "")
 
 
 # As the percentage of missing values is the same for all the columns, we will check if a row misses one value, misses all.
@@ -390,11 +359,11 @@ write_extra_info(git_commits_changes_txt,"Extra check: missing values",result,ex
 # **TESTING POSSIBLE VALIDATION TABLES**
 
 # We are also interested in checking the ammount of rows that contain information about the final selected authors from the tables that we could use for validation.
-# 
+#
 # To evaluate this, two things have to be performed:
-# 
+#
 # * 1. Obtain the names of the final authors.
-# 
+#
 # * 2. Check for the desired tables the number of maching authors.
 
 
@@ -410,7 +379,7 @@ jira_issues = jira_issues.reset_index(drop = True)
 git_commits = git_commits.reset_index(drop = True)
 git_commits_changes = git_commits_changes.reset_index(drop = True)
 szz = szz.reset_index(drop = True)
-ref_min = ref_min.reset_index(drop= True) 
+ref_min = ref_min.reset_index(drop= True)
 
 
 
@@ -441,7 +410,7 @@ for i in range(len(git_commits)):
 sonar_measures_complete = change_commits_to_authors(sonar_measures_complete,"REVISION",commit_author_dict)
 
 
-# As we are only interested in the authors that have both information in the sonar measures and the gits table, 
+# As we are only interested in the authors that have both information in the sonar measures and the gits table,
 # we will select only those.
 sm_auth = set(sonar_measures_complete.Author)
 gits_auth = set(gits.AUTHOR)
@@ -449,7 +418,7 @@ gits_auth = set(gits.AUTHOR)
 authors_interest = sm_auth.intersection(gits_auth)
 
 
-# SECTION 2 
+# SECTION 2
 # Once the names of the authors have been found, then we evaluate from the possible validation table how many
 # authors we have information about.
 
@@ -462,20 +431,13 @@ ref_min = change_commits_to_authors(ref_min,"COMMIT_HASH",commit_author_dict)
 
 track('--> Jira issues')
 t1_result = check_matching(authors_interest,jira_issues,"Author")
-print(write_test_results(jira_issues_txt,"AUTHORS OF INTEREST",t1_result),end = "")
 
 
 track('--> SZZ fault inducing commits ')
 szz_txt = "szz_fault_inducing_commits_quality_analysis.txt"
-print(initialize_doc(szz_txt,"Szz fault inducing commits"),end = "")
 t1_result = check_matching(authors_interest,szz,"Author")
-print(write_test_results(szz_txt,"AUTHORS OF INTEREST",t1_result),end = "")
 
 
 track('--> Refactoring miner')
 ref_min_txt = "refactoring_miner_quality_analysis.txt"
-print(initialize_doc(ref_min_txt,"Refactoring miner"),end = "")
 t1_result = check_matching(authors_interest,ref_min,"Author")
-print(write_test_results(ref_min_txt,"AUTHORS OF INTEREST",t1_result),end = "")
-
-

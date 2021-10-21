@@ -83,8 +83,7 @@ def write_extra_info(filename,test_name,result,intro):
     f = open(path+filename,"a")
     f.write("\n"+intro)
     f.close()
-    print(intro)
-    print(write_test_results(filename,test_name,result),end = "")
+    return write_test_results(filename,test_name,result)
 
 
 
