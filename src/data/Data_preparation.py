@@ -24,6 +24,8 @@ spark = SparkSession.builder.getOrCreate()
 # Define path with .py codes containing functions used in this script
 sys.path.append('.')
 from tracking import track
+
+sys.path.append('../data')
 from preparation_data import delete_na, analyse_categorical_variables, one_hot_encoding, message_length,change_commits_to_authors
 
 track("-"*25 + "DATA PREPARATION" + "-"*25)

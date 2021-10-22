@@ -90,7 +90,7 @@ quality_rating_data = quality_rating_data[["violations", "code_smells",	"bugs",	
 quality_rating_data
 suma = np.sum(quality_rating_data, axis=1)
 total = np.sum(suma)
-quality_rating = suma/total
+quality_rating = 1 - (suma/total)
 track("Finished creating quality rating")
 
 track("Creating plots of quality metrics")

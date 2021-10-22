@@ -69,7 +69,7 @@ min_max_data = transform_dataset(data[cluster_cols],type="min_max")
 
 # Compute the number of clusters and which cluster is every author
 track("Starting WCSS and Elbow method for choosing the number of clusters")
-clusters_none , number_of_clusters_none , silhouette_none = define_num_clusters(min_max_data,min_k=6, max_k=12, method="Normalized_data")
+clusters_none , number_of_clusters_none , silhouette_none = define_num_clusters(min_max_data,min_k=4, max_k=12, method="Normalized_data")
 track("Finished WCSS and Elbow method for choosing the number of clusters")
 
 
@@ -83,7 +83,7 @@ track("Finished computing PCA")
 
 # Compute the number of clusters and which cluster is every author
 track("Starting WCSS and Elbow method for choosing the number of clusters")
-clusters_PCA, number_of_clusters_PCA, silhouette_PCA = define_num_clusters(PCA_data,min_k=6,max_k=12,method="PCA")
+clusters_PCA, number_of_clusters_PCA, silhouette_PCA = define_num_clusters(PCA_data,min_k=4,max_k=12,method="PCA")
 track("Finished WCSS and Elbow method for choosing the number of clusters")
 
 # #### K-means with UMAP data
@@ -101,7 +101,7 @@ track("Finished computing UMAP")
 
 # Compute the number of clusters and which cluster is every author
 track("Starting WCSS and Elbow method for choosing the number of clusters")
-clusters_UMAP, number_of_clusters_UMAP, silhouette_UMAP = define_num_clusters(UMAP_data,min_k=6,max_k=12,method="UMAP")
+clusters_UMAP, number_of_clusters_UMAP, silhouette_UMAP = define_num_clusters(UMAP_data,min_k=4,max_k=12,method="UMAP")
 track("Finished WCSS and Elbow method for choosing the number of clusters")
 
 
