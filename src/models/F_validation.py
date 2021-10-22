@@ -71,5 +71,4 @@ def plot_quality_metrics(df, metrics, yticks):
         save_plot(fgr, "severity_issues")
     else: 
         save_plot(fgr, "issues_types")
-    plt.show()
     plt.close()
