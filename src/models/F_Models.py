@@ -62,7 +62,7 @@ def transform_dataset(dataset, type):
     elif type == "standard":
         transformer = StandardScaler()
     else:
-        print("The type of transformation {} is not supported. The supported transformations are: min_max and standard".format(type))
+        track("The type of transformation {} is not supported. The supported transformations are: min_max and standard".format(type))
     col = dataset.columns
     result = transformer.fit_transform(dataset)
     transformed_data = pd.DataFrame(result, columns=col)
@@ -92,11 +92,11 @@ def f_silhouette_score(dataset,total_clusters):
             max_value = sil_coeff
             k = n_cluster
         track("For n_clusters={}, The Silhouette Coefficient is {}".format(n_cluster, sil_coeff))
-    print("silhouette_score", max_value)
+    track("silhouette_score {}".format(max_value))
     
     return k, max_value
 
-def WCSS_and_Elbow_Method(dataset,max_k):
+def WCSS_and_Elbow_Method(dataset,max_k,method):
     '''
     Objective:
         - Compute the WCSS_and_Elbow_Method
@@ -124,10 +124,10 @@ def WCSS_and_Elbow_Method(dataset,max_k):
     plt.title('WCSS and Elbow Method')
     plt.xlabel('Number of clusters (k)')
     plt.ylabel('WCSS (Elbow Method For Optimal k)')
-    save_plot(fig,"K-means",'WCSS_and_Elbow_Method')
+    save_plot(fig,'WCSS_and_Elbow_Method',"K-means_"+method)
+    plt.close()
 
-
-def define_num_clusters(dataset, min_k, max_k): 
+def define_num_clusters(dataset, min_k, max_k,method): 
     '''
     Objective:
         - Compute the optimal number of clusters with WCSS and Elbow Method and silhouette_score
@@ -143,14 +143,14 @@ def define_num_clusters(dataset, min_k, max_k):
     np.random.seed(0)
 
     # Compute the inertia and plot the graphic between insertia ans number of clusters
-    WCSS_and_Elbow_Method(dataset,max_k)
+    WCSS_and_Elbow_Method(dataset,max_k,method)
 
     # Choosing the number of clusters with the silhouette_score
     number_of_clusters, silhouette = f_silhouette_score(dataset,max_k)
     
     # Change the number of clusters to min_k if the number selected was smaller than this number
     if number_of_clusters < min_k:
-        print('Number of clusters changed to', min_k)
+        track('Number of clusters changed to {}'.format(min_k))
         number_of_clusters = min_k
 
     # Once selected the number of clusters, compute the cluster of each row and added to the dataframe
@@ -158,8 +158,8 @@ def define_num_clusters(dataset, min_k, max_k):
     kmeans.fit(dataset)
     identified_clusters = kmeans.fit_predict(dataset)
     iner = kmeans.inertia_
-    print("total inertia", iner)
-    print("Number of clusters", number_of_clusters)
+    track("total inertia {}".format(iner))
+    track("Number of clusters".format(number_of_clusters))
     
     return (identified_clusters,number_of_clusters,silhouette)
 
@@ -179,8 +179,8 @@ def compute_PCA(dataset, min_var):
     principal_components = pca.fit_transform(dataset)
     pca_df = pd.DataFrame(data = principal_components)
     track("explained variance in PCA:{}".format(sum(pca.explained_variance_ratio_)))
-    print("explained variance in PCA:{}".format(sum(pca.explained_variance_ratio_)))
-    print("PCA components:{}".format(pca_df.shape[1]))
+    track("explained variance in PCA:{}".format(sum(pca.explained_variance_ratio_)))
+    track("PCA components:{}".format(pca_df.shape[1]))
     
     return pca_df
 
@@ -257,19 +257,16 @@ def plot_clusters(clusters, min_max_data, standardized_data,type):
         if type == "UMAP" or type == "PCA":
             plt.title('{} Results'.format(type), fontsize = 12)
             plt.grid()
-            plt.show()
             save_plot(f,type,"plot_"+type)
             plt.close()
         else:
             if i == 0:
                 plt.title('PCA Results', fontsize = 12)  
                 plt.grid()
-                plt.show()
                 save_plot(f,"PCA","plot_PCA")
                 plt.close()
             else:
                 plt.title('UMAP Results', fontsize = 12) 
                 plt.grid()
-                plt.show()
                 save_plot(f,"UMAP","plot_UMAP")
                 plt.close()
