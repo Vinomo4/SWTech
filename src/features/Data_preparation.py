@@ -12,14 +12,17 @@
 import numpy as np
 import pandas as pd
 import os
+import sys
 from datetime import datetime
 import collections
 
 
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
-os.getcwd()
-os.chdir( '../src/features')
+#os.getcwd()
+#os.chdir( '../src/features')
+# Define path with .py codes containing functions used in this script
+sys.path.append('.')
 from tracking import track
 from preparation_data import delete_na, analyse_categorical_variables, one_hot_encoding, message_length,change_commits_to_authors
 
@@ -31,7 +34,7 @@ track("Defining path of the data files")
 # Define the path of the data files
 path1 = '../../data/raw/'
 path2 = "../data/raw/"
-path_git_commits = path1 + 'GIT_COMMITS.csv'
+path_git_commits = path2 + 'GIT_COMMITS.csv'
 path_git_commits_changes = path2 + 'GIT_COMMITS_CHANGES.csv'
 path_jira_issues = path1 + 'JIRA_ISSUES.csv'
 path_sonar_analysis = path1 + 'SONAR_ANALYSIS.csv'

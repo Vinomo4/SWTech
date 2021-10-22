@@ -1,17 +1,18 @@
 # Import libraries and packages
 import os
+import sys
 import pandas as pd
 import numpy as np
 
 # Define path with .py codes containing functions used in this script
-os.getcwd()
-os.chdir( '../src/features')
 
+sys.path.append('../features')
 # Import useful functions for this script  
 from tracking import track
 import matplotlib.pyplot as plt
-os.chdir( '../models')
-from validation import save_plot, plot_quality_metrics
+
+sys.path.append('../models')
+from F_validation import save_plot, plot_quality_metrics
 
 track("-"*25 + "VALIDATION" + "-"*25)
 
