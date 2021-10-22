@@ -32,3 +32,17 @@ Figure will be overwritten
 Finished defining types of variables
 Starting computing basic statistics for the variables of interest for each table
 --> Git commits changes
+-------------------------DECISION TREE CLASSIFIER-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+-------------------------DECISION TREE CLASSIFIER-------------------------
+Defining path to data files
+-------------------------DECISION TREE CLASSIFIER-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+-------------------------DECISION TREE CLASSIFIER-------------------------
+Defining path to data files
+Reading files
+Finished reading files
