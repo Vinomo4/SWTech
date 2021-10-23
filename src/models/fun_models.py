@@ -11,8 +11,8 @@ from sklearn.metrics import silhouette_score
 import seaborn as sns
 import sklearn
 
-os.getcwd()
-os.chdir( '../features')
+
+sys.path.append( '../features')
 from tracking import track
 
 def save_plot(fig,type_model,filename):
