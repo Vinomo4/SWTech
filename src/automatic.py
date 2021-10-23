@@ -14,7 +14,8 @@ exec(open("Clustering.py").read())
 
 #exec(open("Decision Tree Classifier.py").read())
 
-#exec(open("Validation.py").read())
+os.chdir( '../models/')
+exec(open("Validation.py").read())
 
 # Check if everything works fine
 #os.chdir( '../features/')
