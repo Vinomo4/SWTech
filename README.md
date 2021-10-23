@@ -27,7 +27,7 @@ Project Organization
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported [SI JA TENIM EL REQUIREMENTS QUE INSTALA TOTS ELS MODULS, PERQ CAL AQUESTA?]]
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module [!!! eliminar? !!!]
     |   ├── automatic.py   <- Makes src a Python module
@@ -61,14 +61,19 @@ Project Organization
 
 --------
 
-## Install Necessary Packages (Acabar quan estigui fet el deployment)
+## Install Necessary Packages
 
 __To Use Pip:__
 
-Use `requirements.txt` to install all necessary packages for this repository 
+The python and ipython packages inside the `requirements.txt` file need to be installed using the following command.
+
+```bash
+pip install -r requirements.txt
+```
 
 __To Use Sparksession:__
-Install java from https://www.java.com/en/
+
+It is necessary to install java from https://www.java.com/en/.
 
 ## Data
 The original data tables con be obtained in two formats:
