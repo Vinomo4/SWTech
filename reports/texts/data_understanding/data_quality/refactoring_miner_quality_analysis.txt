@@ -1,9 +1,0 @@
----------- REFACTORING MINER QUALITY ANALYSIS ----------
-
-
-The test(s) that will be performed for the REFACTORING MINER table are:
- · Number of authors of interest
---------------------------------------------------------------------------------
-########## AUTHORS OF INTEREST TEST RESULTS ##########
- · There are 120 authors of interest, which represents the 49.1803 % from the total authors of interest
-----------------------------------------
