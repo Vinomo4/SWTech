@@ -13,7 +13,8 @@ import seaborn as sns
 import sklearn
 
 # Define path with .py codes containing functions used in this script
-sys.path.append('.')
+
+sys.path.append('./')
 sys.path.append('../features')
 
 # Import useful functions for this script
@@ -58,8 +59,6 @@ cluster_cols = ['author_timezone', 'commit_message', 'n_commits', 'n_projects_c'
 
 # # Model
 # #### K-means with normalized data
-
-print("AAAAAAAAAAAAAAA")
 
 track("Starting mix max scaling of data")
 # Min max scaling of data

@@ -19,7 +19,7 @@ sys.path.append('../data')
 from tracking import track
 from basic_statistics import save_outputs, describe_variables, bar_plot, plot_histogram, plot_correlations
 from data_quality import initialize_doc, write_test_results, write_extra_info, check_PK, check_NAs, check_missing_authors, check_dates, check_FK, check_duplicates, check_matching
-from preparation_data import delete_na,change_commits_to_authors
+from data_cleansing import delete_na,change_commits_to_authors
 
 # Initializing the tracking file
 if os.path.exists('../../reports/tracking/track.txt'):
@@ -261,15 +261,22 @@ track('Starting checking data quality')
 ## SONAR MEASURES
 track('--> Sonar measures')
 sonar_measures_txt = "sonar_measures_quality_analysis.txt"
+initialize_doc(sonar_measures_txt,"Sonar measures")
 t1_result,fk_violations = check_FK(sonar_measures,'analysis_key',sonar_analysis,'ANALYSIS_KEY')
+write_test_results(sonar_measures_txt,"FK",[t1_result,fk_violations])
 t2_result,_ = check_NAs(sonar_measures,sonar_measures_names)
+write_test_results(sonar_measures_txt,"NA",t2_result)
 t3_result = check_duplicates(sonar_measures)
+write_test_results(sonar_measures_txt,"DUPLICATED",t3_result)
 
 ## SONAR ISSUES
 track('--> Sonar issues')
 sonar_issues_txt = "sonar_issues_quality_analysis.txt"
+initialize_doc(sonar_issues_txt,"Sonar issues")
 t1_result,NA_columns = check_NAs(sonar_issues, sonar_issues_names)
+write_test_results(sonar_issues_txt,"NA",t1_result)
 t2_result = check_duplicates(sonar_issues)
+write_test_results(sonar_issues_txt,"DUPLICATED",t2_result)
 
 # Checking if all the rows that don't have a starting line also don't have an end line.
 
@@ -294,9 +301,13 @@ write_extra_info(sonar_issues_txt,"Extra check: missing values",result,extra_int
 ## SONAR ANALYSIS
 track('--> Sonar analysis')
 sonar_analysis_txt = "sonar_analyisis_quality_analysis.txt"
+initialize_doc(sonar_analysis_txt,"Sonar analysis")
 t1_result = check_PK(sonar_analysis,'ANALYSIS_KEY')
+write_test_results(sonar_analysis_txt,"PK",t1_result)
 t2_result,fk_violations = check_FK(sonar_analysis,'REVISION',git_commits,'COMMIT_HASH')
+write_test_results(sonar_analysis_txt,"FK",[t2_result,fk_violations])
 t3_result = check_duplicates(sonar_analysis)
+write_test_results(sonar_analysis_txt,"DUPLICATED",t3_result)
 
 # As problems in the PK were observed, a further quality examination has been performed. After a quick exploration, we noticed the presence of null values as PK in the analysis. Thus, we wanted to evaluate whether this was the only present problem and the number of rows affected by this phenomenon.
 
@@ -322,25 +333,37 @@ write_extra_info(sonar_analysis_txt,"Extra check: fk violation",result,extra_int
 ## JIRA ISSUES
 track('--> Jira issues')
 jira_issues_txt = "jira_issues_quality_analysis.txt"
+initialize_doc(jira_issues_txt,"Jira issues")
 t1_result,fk_violations = check_FK(jira_issues,'HASH',git_commits,'COMMIT_HASH')
+write_test_results(jira_issues_txt,"FK",[t1_result,fk_violations])
 t2_result = check_duplicates(jira_issues)
-
+write_test_results(jira_issues_txt,"DUPLICATED",t2_result)
 
 ## GIT COMMITS
 track('--> Git commits')
 git_commits_txt = "git_commits_quality_analysis.txt"
+initialize_doc(git_commits_txt,"Git commits")
 t1_result = check_PK(git_commits,'COMMIT_HASH')
+write_test_results(git_commits_txt,"PK",t1_result)
 t2_result = check_dates(git_commits,'AUTHOR_DATE',datetime.today(),'1999',1)
+write_test_results(git_commits_txt,"DATES RANGE",t2_result)
 t3_result = check_missing_authors(git_commits,'AUTHOR')
+write_test_results(git_commits_txt,"MISSING AUTHORS",t3_result)
 t4_result = check_duplicates(git_commits)
+write_test_results(git_commits_txt,"DUPLICATED",t4_result)
 
 ## GIT COMMITS CHANGES
 track('--> Git commits changes')
 git_commits_changes_txt = "git_commits_changes_quality_analysis.txt"
+initialize_doc(git_commits_changes_txt,"Git commits changes")
 t1_result = check_dates(git_commits_changes,'DATE',datetime.today(),'1999',2)
+write_test_results(git_commits_changes_txt,"DATES RANGE",t1_result)
 t2_result,fk_violations = check_FK(git_commits_changes,'COMMIT_HASH',git_commits,'COMMIT_HASH')
+write_test_results(git_commits_changes_txt,"FK",[t2_result,fk_violations])
 t3_result,_ = check_NAs(git_commits_changes,git_commits_changes_names)
+write_test_results(git_commits_changes_txt,"NA",t3_result)
 t4_result = check_duplicates(git_commits_changes)
+write_test_results(git_commits_changes_txt,"DUPLICATED",t4_result)
 
 
 # As the percentage of missing values is the same for all the columns, we will check if a row misses one value, misses all.
@@ -429,13 +452,18 @@ ref_min = change_commits_to_authors(ref_min,"COMMIT_HASH",commit_author_dict)
 
 track('--> Jira issues')
 t1_result = check_matching(authors_interest,jira_issues,"Author")
+write_test_results(jira_issues_txt,"AUTHORS OF INTEREST",t1_result)
 
 
 track('--> SZZ fault inducing commits ')
 szz_txt = "szz_fault_inducing_commits_quality_analysis.txt"
+initialize_doc(szz_txt,"Szz fault inducing commits")
 t1_result = check_matching(authors_interest,szz,"Author")
+write_test_results(szz_txt,"AUTHORS OF INTEREST",t1_result)
 
 
 track('--> Refactoring miner')
 ref_min_txt = "refactoring_miner_quality_analysis.txt"
+initialize_doc(ref_min_txt,"Refactoring miner")
 t1_result = check_matching(authors_interest,ref_min,"Author")
+write_test_results(ref_min_txt,"AUTHORS OF INTEREST",t1_result)

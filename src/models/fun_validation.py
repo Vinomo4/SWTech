@@ -12,7 +12,7 @@ def save_plot(fig,filename):
         - Save plots
     Input:
         - fig: figure we want to save
-        - filename: Name of the file 
+        - filename: Name of the file
     Output:
         - None
     '''
@@ -32,9 +32,9 @@ def save_plot(fig,filename):
     if (os.path.exists(file_name)== True):
         track ("Warning: Figure %s already created" % path)
         track('Figure will be overwritten')
-        plt.savefig(file_name, transparent=True)
+        plt.savefig(file_name)
     else:
-        plt.savefig(file_name, transparent=True)
+        plt.savefig(file_name)
     track("Successfully saved %s" % path)
 
 def plot_quality_metrics(df, metrics, yticks):
@@ -42,7 +42,7 @@ def plot_quality_metrics(df, metrics, yticks):
     Objective:
         - To plot the metric values for each cluster
     Input:
-        - df: dataframe 
+        - df: dataframe
         - metrics: selected columns of the dataframe to be plotted
         - yticks: y-axis values to be printed in the plot
     Output:
@@ -67,7 +67,7 @@ def plot_quality_metrics(df, metrics, yticks):
         legend_metrics = ["Blocker violations", "Critical violations", "Major violations", "Minor violations"]
     elif metrics[0] == "blocker":
         legend_metrics = ["Blocker severity issues", "Critical severity issues", "Major severity issues", "Minor severity issues"]
-    else: 
+    else:
         legend_metrics = ["Code smells", "Bugs" "Vulnerabilities"]
     plt.legend(legend_metrics, bbox_to_anchor=(1.001,0.8), prop={'size': FONTSIZE})
     plt.grid()
@@ -75,6 +75,6 @@ def plot_quality_metrics(df, metrics, yticks):
         save_plot(fgr, "violations")
     elif metrics[0] == "blocker":
         save_plot(fgr, "severity_issues")
-    else: 
+    else:
         save_plot(fgr, "issues_types")
     plt.close()

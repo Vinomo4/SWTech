@@ -20,19 +20,24 @@ def save_outputs(fig,type_plot,variable,name_table):
     Output:
         - None
     '''
+    # Path to store text.
+    path_txt = '../../reports/texts/data_understanding'
+    # Path to store images.
+    path_img = '../../reports/figures/data_understanding'
     # Path and name of the file/figure we want to save
     if variable == None :
         if type_plot == 'summary_cont' or type_plot == 'summary_cat':
-            path = '../../reports/figures/data_understanding'+"/"+type_plot[0:7]+"/"+name_table
+            path = path_txt+"/"+type_plot[0:7]+"/"+name_table
             file_name = path+"/"+type_plot+".csv"
         else:
-            path = '../../reports/figures/data_understanding'+"/"+type_plot+"/"+name_table
             if type_plot == "type_variables":
+                path = path_txt+"/"+type_plot+"/"+name_table
                 file_name = path+"/"+type_plot+".csv"
             else :
+                path = path_img+"/"+type_plot+"/"+name_table
                 file_name = path+"/"+type_plot+".png"
     else:
-        path = '../../reports/figures/data_understanding'+"/"+type_plot+"/"+name_table
+        path = path_img+"/"+type_plot+"/"+name_table
         file_name = path+"/"+type_plot+"_"+variable+".png"
 
     # Directory creation if doesn't exists
@@ -54,12 +59,12 @@ def save_outputs(fig,type_plot,variable,name_table):
         if type_plot == 'summary_cont' or type_plot == 'summary_cat' or type_plot == "type_variables":
             fig.to_csv(file_name)
         else:
-            plt.savefig(file_name, transparent=True)
+            plt.savefig(file_name)
     else:
         if type_plot == 'summary_cont' or type_plot == 'summary_cat' or type_plot == "type_variables":
             fig.to_csv(file_name)
         else:
-            plt.savefig(file_name, transparent=True)
+            plt.savefig(file_name)
 
         track("Successfully saved %s" % path)
 

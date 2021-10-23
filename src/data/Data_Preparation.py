@@ -85,8 +85,6 @@ dtypes = ['uint8','int16', 'int32', 'int64', 'float16', 'float32', 'float64', 'o
 dtypes_num = dtypes[:-1]
 track("Finishing defining numercial types")
 
-print("AAAA")
-
 # Deleting all NA values from the tables by using the global function implemented above delete_na().
 track("Starting analysing NA values from all tables")
 tables = [sonar_measures, sonar_issues, sonar_analysis, jira_issues,git_commits, git_commits_changes]
