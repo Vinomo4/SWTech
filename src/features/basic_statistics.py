@@ -142,6 +142,7 @@ def bar_plot(variable,dataframe,vertical,name_table):
 
     plt.title('Data of each '+variable.name)
     save_outputs(fig,'barplot',variable.name,name_table)
+    plt.close()
 
 
 def plot_histogram(dataframe,numerical,name_table):
@@ -165,6 +166,7 @@ def plot_histogram(dataframe,numerical,name_table):
             fig = plt.xlabel(f'{col}')
             fig = plt.ylabel('Frequency')
             save_outputs(fig,'histogram',col,name_table)
+            plt.close()
 
 
 def plot_correlations(dataframe, numerical,name_table):
@@ -188,3 +190,4 @@ def plot_correlations(dataframe, numerical,name_table):
             plt.figure(figsize = (20,20))
         fig = sn.heatmap(corrMatrix, annot=True)
         save_outputs(fig,'heatmap',None,name_table)
+        plt.close()
