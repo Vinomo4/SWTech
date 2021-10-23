@@ -63,6 +63,8 @@ def plot_quality_metrics(df, metrics, yticks):
     plt.ylabel('Metric value', fontsize = FONTSIZE)
     plt.xticks(ticks=range(len(df)), labels=df["clusters"], fontsize = FONTSIZE)
     plt.yticks(ticks = yticks, fontsize=FONTSIZE)
+    plt.tight_layout()
+    
     if metrics[0] == "blocker_violations":
         legend_metrics = ["Blocker violations", "Critical violations", "Major violations", "Minor violations"]
     elif metrics[0] == "blocker":
