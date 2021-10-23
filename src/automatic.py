@@ -8,7 +8,7 @@ import os
 os.chdir( '../data/')
 #exec(open("Data_Preparation.py").read())
 
-print()
+
 os.chdir( '../models/')
 exec(open("Clustering.py").read())
 
