@@ -65,7 +65,10 @@ Project Organization
 
 __To Use Pip:__
 
-Use `requirements.txt` to install all necessary packages for this repository (FINS QUE NO S'HAGI FET NO SÉ SI S'HAURA D'INCLOURE)
+Use `requirements.txt` to install all necessary packages for this repository 
+
+__To Use Sparksession:__
+Install java from https://www.java.com/en/
 
 ## Data
 The original data tables con be obtained in two formats:
