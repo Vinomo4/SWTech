@@ -83,6 +83,8 @@ track("Starting defining numercial types")
 # Select columns of interest
 dtypes = ['uint8','int16', 'int32', 'int64', 'float16', 'float32', 'float64', 'object']
 dtypes_num = dtypes[:-1]
+# Converting columns that are wrongly formated.
+git_commits_changes[["LINES_ADDED", "LINES_REMOVED"]] = git_commits_changes[["LINES_ADDED", "LINES_REMOVED"]] .apply(pd.to_numeric)
 track("Finishing defining numercial types")
 
 # Deleting all NA values from the tables by using the global function implemented above delete_na().

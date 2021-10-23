@@ -5,10 +5,10 @@ from prettytable import PrettyTable
 def delete_na(dataframes, dtypes):
     '''
     Objective:
-        - Delete all NA's from the dataframe passed
+        - Delete all NA's from the dataframes passed
     Input:
-        - Dataframe : String of the tables and their selected columns
-        - Numerical : Numerical types
+        - dataframes : String of the tables and their selected columns
+        - dtypes : Numerical types
 
     Output:
         - Dataframe with the deleted values.
