@@ -239,3 +239,35 @@ Warning: Figure ../../reports/figures/validation/ already created
 Figure will be overwritten
 Successfully saved ../../reports/figures/validation/
 Finished creating plots of quality metrics
+Reading files
+Finished reading files
+Creating average quality dataset
+Finished creating average quality dataset
+Creating plots of quality metrics
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Finished creating plots of quality metrics
+-------------------------VALIDATION-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Creating average quality dataset
+Finished creating average quality dataset
+Creating plots of quality metrics
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Finished creating plots of quality metrics

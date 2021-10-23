@@ -49,7 +49,7 @@ def plot_quality_metrics(df, metrics, yticks):
         - Plot: plots the metric values for each cluster to compare among them
     '''
     FONTSIZE = 12
-    FIG_WIDTH = 15
+    FIG_WIDTH = 5
     FIG_HEIGHT = 7
     fgr = plt.figure(figsize=(FIG_WIDTH, FIG_HEIGHT))
     for metric in metrics:
