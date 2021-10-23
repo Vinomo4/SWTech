@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import os
-from sklearn.preprocessing import normalize, StandardScaler
+from sklearn.preprocessing import normalize, StandardScaler, MinMaxScaler
 from sklearn.decomposition import PCA
 from umap import UMAP
 from sklearn.cluster import KMeans
@@ -57,8 +57,8 @@ def transform_dataset(dataset, type):
     Output:
         - Transformed data
     '''
-    if type == "Normalize":
-        transformer = Normalize()
+    if type == "min-max":
+        transformer = MinMaxScaler()
     elif type == "standard":
         transformer = StandardScaler()
     else:
