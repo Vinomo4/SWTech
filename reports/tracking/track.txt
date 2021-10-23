@@ -3,3 +3,27 @@ Finished importing libraries
 Defining path to data files
 Reading files
 Finished reading files
+-------------------------DATA PREPARATION-------------------------
+Defining path of the data files
+-------------------------DATA PREPARATION-------------------------
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+-------------------------DATA PREPARATION-------------------------
+Defining path of the data files
+Finishing defining path of the data files
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files

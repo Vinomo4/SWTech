@@ -32,20 +32,18 @@ track("Finished importing libraries")
 track("Defining path to data files")
 
 # Define base path to data files
-path1 = '../../data/raw/'
-path2 = "../data/raw/"
-
+path = '../../data/raw/'
 
 # Define path to the tables that will be used in this project
 # These are: GIT_COMMITS_CHANGES, GIT_COMMITS, JIRA_ISSUES, SONAR_ANALYSIS, SONAR_ISSUES, and SONAR_MEASURES tables
-path_git_commits_changes = path1 + 'GIT_COMMITS_CHANGES.csv'
-path_git_commits = path1 + 'GIT_COMMITS.csv'
-path_jira_issues = path1 + 'JIRA_ISSUES.csv'
-path_sonar_analysis = path1 + 'SONAR_ANALYSIS.csv'
-path_sonar_issues = path1 + 'SONAR_ISSUES.csv'
-path_sonar_measures = path1 + 'SONAR_MEASURES.csv'
-path_szz = path1 + 'SZZ_FAULT_INDUCING_COMMITS.csv'
-path_ref_min = path1 + 'REFACTORING_MINER.csv'
+path_git_commits_changes = path + 'GIT_COMMITS_CHANGES.csv'
+path_git_commits = path + 'GIT_COMMITS.csv'
+path_jira_issues = path + 'JIRA_ISSUES.csv'
+path_sonar_analysis = path + 'SONAR_ANALYSIS.csv'
+path_sonar_issues = path + 'SONAR_ISSUES.csv'
+path_sonar_measures = path + 'SONAR_MEASURES.csv'
+path_szz = path + 'SZZ_FAULT_INDUCING_COMMITS.csv'
+path_ref_min = path + 'REFACTORING_MINER.csv'
 
 
 # Ensure the input file exist

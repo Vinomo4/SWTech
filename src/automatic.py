@@ -4,10 +4,11 @@ import os
 os.getcwd()
 #print(os.getcwd())
 os.chdir( './features/')
-exec(open("Data_Understanding.py").read())
+#exec(open("Data_Understanding.py").read())
 
-os.chdir( './features/')
-#exec(open("Data_Preparation.py").read())
+os.chdir( '../data/')
+print(os.getcwd())
+exec(open("Data_Preparation.py").read())
 
 #os.chdir( '../models/')
 #exec(open("Models.py").read())

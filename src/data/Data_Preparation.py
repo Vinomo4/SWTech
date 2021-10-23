@@ -6,7 +6,7 @@
 # - SONAR_ANALYSIS
 # - SONAR_ISSUES
 # - SONAR_MEASURES
- 
+
 # Import libraries and packages
 # Miscellaneous libraries
 import numpy as np
@@ -19,33 +19,32 @@ import collections
 
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
-#os.getcwd()
-#os.chdir( '../src/features')
+
 # Define path with .py codes containing functions used in this script
 sys.path.append('.')
+sys.path.append('../features/')
 from tracking import track
 
-sys.path.append('../data')
-from preparation_data import delete_na, analyse_categorical_variables, one_hot_encoding, message_length,change_commits_to_authors
+from data_cleansing import delete_na, analyse_categorical_variables, one_hot_encoding, message_length,change_commits_to_authors
 
 track("-"*25 + "DATA PREPARATION" + "-"*25)
 
- 
+
 # Data Preparation
 track("Defining path of the data files")
 # Define the path of the data files
-path1 = '../../data/raw/'
-path2 = "../data/raw/"
-path_git_commits = path2 + 'GIT_COMMITS.csv'
-path_git_commits_changes = path2 + 'GIT_COMMITS_CHANGES.csv'
-path_jira_issues = path1 + 'JIRA_ISSUES.csv'
-path_sonar_analysis = path1 + 'SONAR_ANALYSIS.csv'
-path_sonar_issues = path1 + 'SONAR_ISSUES.csv'
-path_sonar_measures = path1 + 'SONAR_MEASURES.csv'
+path = '../../data/raw/'
+
+path_git_commits = path + 'GIT_COMMITS.csv'
+path_git_commits_changes = path + 'GIT_COMMITS_CHANGES.csv'
+path_jira_issues = path + 'JIRA_ISSUES.csv'
+path_sonar_analysis = path + 'SONAR_ANALYSIS.csv'
+path_sonar_issues = path + 'SONAR_ISSUES.csv'
+path_sonar_measures = path + 'SONAR_MEASURES.csv'
 
 # Ensure the input file exist
 assert os.path.isfile(path_git_commits), f'{path_git_commits} not found. Is it a file?'
-assert os.path.isfile("../"+path_git_commits_changes), f'{path_git_commits_changes} not found. Is it a file?'
+assert os.path.isfile(path_git_commits_changes), f'{path_git_commits_changes} not found. Is it a file?'
 assert os.path.isfile(path_jira_issues), f'{path_jira_issues} not found. Is it a file?'
 assert os.path.isfile(path_sonar_analysis), f'{path_sonar_analysis} not found. Is it a file?'
 assert os.path.isfile(path_sonar_issues), f'{path_sonar_issues} not found. Is it a file?'
@@ -69,7 +68,7 @@ git_commits_names = ['PROJECT_ID','COMMIT_HASH','AUTHOR','AUTHOR_TIMEZONE','COMM
 jira_issues_names = ['HASH']
 sonar_analysis_names = ['PROJECT_ID','ANALYSIS_KEY','REVISION']
 sonar_issues_names = ['CREATION_ANALYSIS_KEY','SEVERITY','STATUS','EFFORT','MESSAGE','START_LINE','END_LINE','CLOSE_ANALYSIS_KEY']
-sonar_measures_names = ['analysis_key','complexity' ,'cognitive_complexity', 'coverage', 'duplicated_blocks', 'duplicated_files', 
+sonar_measures_names = ['analysis_key','complexity' ,'cognitive_complexity', 'coverage', 'duplicated_blocks', 'duplicated_files',
                         'duplicated_lines_density', 'violations','blocker_violations','critical_violations','major_violations','minor_violations','info_violations','false_positive_issues','open_issues','reopened_issues','confirmed_issues', 'sqale_debt_ratio','code_smells','bugs','reliability_rating','vulnerabilities','security_rating','files', 'comment_lines_density']
 # Select variables of interest
 git_commits_changes = git_commits_changes[git_commits_changes_names]
@@ -85,6 +84,8 @@ track("Starting defining numercial types")
 dtypes = ['uint8','int16', 'int32', 'int64', 'float16', 'float32', 'float64', 'object']
 dtypes_num = dtypes[:-1]
 track("Finishing defining numercial types")
+
+print("AAAA")
 
 # Deleting all NA values from the tables by using the global function implemented above delete_na().
 track("Starting analysing NA values from all tables")
@@ -112,19 +113,19 @@ variable_names = [["SEVERITY", "STATUS"]]
 dataframes = [sonar_issues]
 analyse_categorical_variables(table_names, variable_names, dataframes)
 
-# As can be seen in the chunk above, the SEVERITY and STATUS variables have 5 and 1 levels respectively. In our case, we have performed the One-hot encoding for the SEVERITY variable. For the STATUS variable, efore deleting all NA, there was the OPENED level. However, all rows with an OPENED status contained NA, which means that for this variable we only have the CLOSED level. 
+# As can be seen in the chunk above, the SEVERITY and STATUS variables have 5 and 1 levels respectively. In our case, we have performed the One-hot encoding for the SEVERITY variable. For the STATUS variable, efore deleting all NA, there was the OPENED level. However, all rows with an OPENED status contained NA, which means that for this variable we only have the CLOSED level.
 # When joining the tables, we will calulate the mean of each types each author has.
 sonar_issues = one_hot_encoding(sonar_issues, "SEVERITY")
 sonar_issues = one_hot_encoding(sonar_issues, "STATUS")
 track("Finishing analysing categorical variables from all tables")
- 
+
 # MESSAGE and COMMIT_MESSAGE variables
 # In the following section, we will encode the MESSAGE and COMMIT_MESSAGE variables for the SONAR_ISSUES table and GIT_COMMITS table respectively. For those variables, we will calulate the length of the message for each issue/commit, and reassigning the column with that new value instead of the text from the original message.
 track("Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function")
 message_length(sonar_issues,"MESSAGE")
 message_length(git_commits,"COMMIT_MESSAGE")
 track("Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function")
- 
+
 # ISSUE_CODE_LENGTH variable
 # In the following cells we will proceed to computate the length mean per issue with the START_LINE and END_LINE variables.
 track("Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table")
@@ -164,7 +165,7 @@ sonar_issues_complete = change_commits_to_authors(sonar_issues_complete,"REVISIO
 sonar_measures_complete = change_commits_to_authors(sonar_measures_complete,"REVISION",commit_author_dict)
 # Once both tables contain the author info, we proceeed to aggrupate by such value.
 
-# SONAR_ISSUES 
+# SONAR_ISSUES
 # First we add a new dummy column containg all 1s that will allow us to compute the total number of issues per author afterwards.
 sonar_issues_complete["N_ISSUES"] = [1 for i in range(len(sonar_issues_complete))]
 # Then, a dictionary is created indicating which aggregation function will be used for each column.
@@ -243,5 +244,3 @@ complete_table.columns = new_col_names
 try: os.mkdir("../../temp_data/")
 except: pass
 complete_table.to_csv("../../temp_data/model_data.csv", index_label = "author")
-
-
