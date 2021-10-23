@@ -108,4 +108,12 @@ The following READMEs provide details about the other scripts and options used i
 4. Creation of a new quality rating associated to each cluster
 5. ...
 
+## Deployment
+The deployment process consists of giving an input author the user obtains the quality rating corresponding to the author entered as an output.
+The command to use
+
+```bash
+ python3 Deployment.py --author '<name of the author>'
+ ```
+
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
