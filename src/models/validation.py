@@ -57,7 +57,7 @@ track("Finished creating average quality dataset")
 
 track("Creating quality rating")
 quality_rating_data = clusterized_data.groupby('clusters').agg({
-    'violations': 'sum',
+                            'violations': 'sum',
                             'blocker_violations': 'sum',
                             'critical_violations': 'sum',
                             'major_violations': 'sum',
