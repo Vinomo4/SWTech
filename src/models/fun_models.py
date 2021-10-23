@@ -2,8 +2,7 @@
 import numpy as np
 import pandas as pd
 import os
-import sys
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from sklearn.preprocessing import normalize, StandardScaler
 from sklearn.decomposition import PCA
 from umap import UMAP
 from sklearn.cluster import KMeans
@@ -12,7 +11,8 @@ from sklearn.metrics import silhouette_score
 import seaborn as sns
 import sklearn
 
-sys.path.append('../features')
+os.getcwd()
+os.chdir( '../features')
 from tracking import track
 
 def save_plot(fig,type_model,filename):
@@ -22,7 +22,7 @@ def save_plot(fig,type_model,filename):
     Input:
         - fig: figure we want to save
         - type_model: K-means
-        - filename: Name of the file
+        - filename: Name of the file 
     Output:
         - None
     '''
@@ -42,9 +42,9 @@ def save_plot(fig,type_model,filename):
     if (os.path.exists(file_name)== True):
         track ("Warning: Figure %s already created" % path)
         track('Figure will be overwritten')
-        plt.savefig(file_name)
+        plt.savefig(file_name, transparent=True)
     else:
-        plt.savefig(file_name)
+        plt.savefig(file_name, transparent=True)
     track("Successfully saved %s" % path)
 
 def transform_dataset(dataset, type):
@@ -52,13 +52,13 @@ def transform_dataset(dataset, type):
     Objective:
         - Scales and translates each feature individually such that it is in the given range on the training set, e.g. between zero and one.
     Input:
-        - dataset: Pandas dataframe
+        - dataset: Pandas dataframe 
         - type: "min_max" or "standard"
     Output:
         - Transformed data
     '''
-    if type == "min_max":
-        transformer = MinMaxScaler()
+    if type == "Normalize":
+        transformer = Normalize()
     elif type == "standard":
         transformer = StandardScaler()
     else:
@@ -74,11 +74,11 @@ def f_silhouette_score(dataset,total_clusters):
     Objective:
         - Compute the silhouette_score
     Input:
-        - dataset: Normalized dataframe
+        - dataset: Normalized dataframe 
         - total_clusters: Maximum number of clusters
     Output:
         - Number of clusters that has the biggest value of silhouette_score
-    '''
+    '''      
 
     max_value = 0
     k = 0
@@ -93,7 +93,7 @@ def f_silhouette_score(dataset,total_clusters):
             k = n_cluster
         track("For n_clusters={}, The Silhouette Coefficient is {}".format(n_cluster, sil_coeff))
     track("silhouette_score {}".format(max_value))
-
+    
     return k, max_value
 
 def WCSS_and_Elbow_Method(dataset,max_k,method):
@@ -101,7 +101,7 @@ def WCSS_and_Elbow_Method(dataset,max_k,method):
     Objective:
         - Compute the WCSS_and_Elbow_Method
     Input:
-        - dataset: Normalized dataframe
+        - dataset: Normalized dataframe 
         - total_clusters: Maximum number of clusters
     Output:
         - Save the plot of number of clusters vs inertia
@@ -113,12 +113,12 @@ def WCSS_and_Elbow_Method(dataset,max_k,method):
         kmeans = KMeans(i)
         kmeans.fit(dataset)
         # Compute the inertia
-        inertia = kmeans.inertia_
+        inertia = kmeans.inertia_        
 
         # Save the inertia of each iteration
-        wcss.append(inertia)
+        wcss.append(inertia)  
 
-    # Plot the number of clusters vs inertia
+    # Plot the number of clusters vs inertia 
     number_clusters = range(1,max_k)
     fig = plt.plot(number_clusters,wcss, 'bx-')
     plt.title('WCSS and Elbow Method')
@@ -127,14 +127,14 @@ def WCSS_and_Elbow_Method(dataset,max_k,method):
     save_plot(fig,'WCSS_and_Elbow_Method',"K-means_"+method)
     plt.close()
 
-def define_num_clusters(dataset, min_k, max_k,method):
+def define_num_clusters(dataset, min_k, max_k,method): 
     '''
     Objective:
         - Compute the optimal number of clusters with WCSS and Elbow Method and silhouette_score
     Input:
-        - dataset: scaled dataframe
+        - dataset: scaled dataframe 
         - min_k: minimum number of clusters to be used
-        - max_k : maximum number of clusters to be used
+        - max_k : maximum number of clusters to be used 
     Output:
         - List containing the cluster assigned to each row
     '''
@@ -147,7 +147,7 @@ def define_num_clusters(dataset, min_k, max_k,method):
 
     # Choosing the number of clusters with the silhouette_score
     number_of_clusters, silhouette = f_silhouette_score(dataset,max_k)
-
+    
     # Change the number of clusters to min_k if the number selected was smaller than this number
     if number_of_clusters < min_k:
         track('Number of clusters changed to {}'.format(min_k))
@@ -160,15 +160,15 @@ def define_num_clusters(dataset, min_k, max_k,method):
     iner = kmeans.inertia_
     track("total inertia {}".format(iner))
     track("Number of clusters".format(number_of_clusters))
-
+    
     return (identified_clusters,number_of_clusters,silhouette)
 
 def compute_PCA(dataset, min_var):
     '''
     Objective:
-        - Compute PCA
+        - Compute PCA 
     Input:
-        - dataset: min max scaled dataframe
+        - dataset: min max scaled dataframe 
         - min_var: minimum explained variance
     Output:
         - PCA data
@@ -181,15 +181,15 @@ def compute_PCA(dataset, min_var):
     track("explained variance in PCA:{}".format(sum(pca.explained_variance_ratio_)))
     track("explained variance in PCA:{}".format(sum(pca.explained_variance_ratio_)))
     track("PCA components:{}".format(pca_df.shape[1]))
-
+    
     return pca_df
 
 def compute_UMAP(dataset,n_neighbors,min_dist,n_components):
     '''
     Objective:
-        - Compute UMAP
+        - Compute UMAP 
     Input:
-        - dataset: standardized dataframe
+        - dataset: standardized dataframe 
         - n_neighbors: controls how UMAP balances local versus global structure in the data
         - min_dist: minimum distance apart that points are allowed to be in the low dimensional representation
         - n_components: dimensionality of the reduced dimension space
@@ -204,7 +204,7 @@ def compute_UMAP(dataset,n_neighbors,min_dist,n_components):
     return UMAP_df
 
 
-def plot_clusters(clusters, min_max_data, standardized_data,type):
+def plot_clusters(clusters, standardized_data,type):
     '''
     Objective:
         - Compute the PCA or UMAP plot
@@ -216,14 +216,14 @@ def plot_clusters(clusters, min_max_data, standardized_data,type):
         - Save the PCA or UMAP plot
     '''
     clusters = pd.Series(clusters)
-
+    
     if type == "PCA":
         pca = PCA(n_components=2)
-        ## Perform PCA
+        ## Perform PCA 
         # Fit the PCA to the data, and then transform the data into its principal components
         principal_components = pca.fit_transform(min_max_data)
         plots = 1
-
+    
     elif type == "UMAP":
         ## Perform UMAP
         # Fit the UMAP to the data, and then transform the data into its principal components
@@ -232,7 +232,7 @@ def plot_clusters(clusters, min_max_data, standardized_data,type):
         plots = 1
     else:
         plots = 2
-
+    
     for i in range(plots):
         if type == "None":
             if i == 0:
@@ -243,7 +243,7 @@ def plot_clusters(clusters, min_max_data, standardized_data,type):
                 ## Perform UMAP
                 reducer = UMAP(n_neighbors=40,min_dist=0.01,n_components=2,random_state=0)
                 principal_components = reducer.fit_transform(standardized_data)
-
+              
 
         # Dataframe of the two principal_components
         pcs_df = pd.DataFrame(data = principal_components, columns = ['principal component 1', 'principal component 2'])
@@ -261,12 +261,12 @@ def plot_clusters(clusters, min_max_data, standardized_data,type):
             plt.close()
         else:
             if i == 0:
-                plt.title('PCA Results', fontsize = 12)
+                plt.title('PCA Results', fontsize = 12)  
                 plt.grid()
                 save_plot(f,"PCA","plot_PCA")
                 plt.close()
             else:
-                plt.title('UMAP Results', fontsize = 12)
+                plt.title('UMAP Results', fontsize = 12) 
                 plt.grid()
                 save_plot(f,"UMAP","plot_UMAP")
                 plt.close()

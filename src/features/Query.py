@@ -60,4 +60,4 @@ if __name__ == '__main__':
         print("The quality rating of the author {} is {}. {} has {}".format(author,quality_rating[0],author,cluster_name[0]))
 
 
-# python3 Deployment.py --author 'Adrian Crum'
+# python3 Query.py --author 'Adrian Crum'
