@@ -8,15 +8,14 @@ import os
 os.chdir( '../data/')
 #exec(open("Data_Preparation.py").read())
 
-print()
 os.chdir( '../models/')
 exec(open("Clustering.py").read())
 
 #exec(open("Decision Tree Classifier.py").read())
 
 os.chdir( '../models/')
-exec(open("Validation.py").read())
+#exec(open("Validation.py").read())
 
 # Check if everything works fine
-#os.chdir( '../features/')
-#exec(open("Check_tracking.py").read())
+os.chdir( '../features/')
+exec(open("Check_tracking.py").read())
