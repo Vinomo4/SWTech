@@ -1,0 +1,18 @@
+---------- JIRA ISSUES QUALITY ANALYSIS ----------
+
+
+The test(s) that will be performed for the JIRA ISSUES table are:
+ · Foreign key constraint
+ · Number of authors of interest
+--------------------------------------------------------------------------------
+########## FK TEST RESULTS ##########
+ · 0.127% of the FKs are unreferenced.
+ ·  The FK without references are:
+[3a4b72c2e73298e98e7b24a54b4bcf66d4abf55d,5e900960d38377d2df439dfc35102d459c32f811,f1a1459f19685a71e1d7d7d7dc2de0c3cc2ea077,04daba9c6b85b3a1903324bdbc8948b33f9b0a4f,2004bc4ddab08de9c92cf9c26ac07f2c35074050,8d6852452de03500dba8e8edf4bf5b5faad31dbf,27357a780007d35ebe5cdf0ac9bfbf157425c377,fea8c46739b307f30152e50dc1f30f01237a89bb,73257bdb3bdf9b391353173411ab7e2362c6534a,8fa525dd420dcfcec0341a445b0d06c811731d99,d28e5d59c0366ddfbbdd05d6d30f39f1df99e300,f4903cf1df0a144f61073af038806b7ae8d4f8c0,3425aa853e026a05c9b6d920efe230a869fee0b2,eeae97a2141dbe1bec8eaab4adfc5338ee2cb38c,49b288fdff2643dedcdad57e67cd6129140866c0,1d1d4e988afca3499224f785a2740f35d7cb6e1c,53037495f2f7cb1d46d42c26cbf1493a29f4a610,d36abc3b2e6721cf8493560d894ee25d2e33e8be,e48bd65cfff288283c5d1a01c96a1f4b033f9ee5,dc19e1793db5b078f053c7b85e3a6459292d47cf,83ea8fa047b709c123eb01bb4f4c867d203194ac,ace8613f0f21601296744eedc1ce80dd1ca0fdae,cc578944b2fe9e88a631d7a6ecbb226968143401,21013ec42101aa6907431756e1763fb3d6f7ce56,1e74a3395a9c3c4d67093f9a073bffb5a176916c,a08b83add286f9bbd10e6d3671143281031d2d94,5164a4e7b4e122bd3f81db212f6d8ed4a681c583,dcfa0f2974abd7cbf50be745f3197f0b977a7e07]
+----------------------------------------
+########## DUPLICATED TEST RESULTS ##########
+ · There are 99.85 % of duplicated rows.
+----------------------------------------
+########## AUTHORS OF INTEREST TEST RESULTS ##########
+ · There are 3 authors of interest, which represents the 1.2295 % from the total authors of interest
+----------------------------------------

@@ -1,0 +1,9 @@
+,0
+CREATION_ANALYSIS_KEY,object
+SEVERITY,object
+STATUS,object
+EFFORT,float64
+MESSAGE,object
+START_LINE,float64
+END_LINE,float64
+CLOSE_ANALYSIS_KEY,object

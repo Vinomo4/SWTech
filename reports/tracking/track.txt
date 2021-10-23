@@ -1,0 +1,242 @@
+-------------------------DATA UNDERSTANDING-------------------------
+Finished importing libraries
+Defining path to data files
+Reading files
+Finished reading files
+Defining attributes of intereset for each dataframe...
+Finished selecting attributes of intereset for each dataframe
+Defining numerical types...
+Finished defining numercial types
+Modifying wrongly formatted columns...
+Finished modifying wrongly formatted columns
+-------------------------------------------------------------------------------
+Defining attributes types and saving results...
+--> Git commits changes
+Successfully created the directory ../../reports/texts/data_understanding/type_variables/git_commits_changes
+Successfully saved ../../reports/texts/data_understanding/type_variables/git_commits_changes
+--> Git commits
+Successfully created the directory ../../reports/texts/data_understanding/type_variables/git_commits
+Successfully saved ../../reports/texts/data_understanding/type_variables/git_commits
+--> Jira issues
+Successfully created the directory ../../reports/texts/data_understanding/type_variables/jira_issues
+Successfully saved ../../reports/texts/data_understanding/type_variables/jira_issues
+--> Sonar analysis
+Successfully created the directory ../../reports/texts/data_understanding/type_variables/sonar_analysis
+Successfully saved ../../reports/texts/data_understanding/type_variables/sonar_analysis
+--> Sonar issues
+Successfully created the directory ../../reports/texts/data_understanding/type_variables/sonar_issues
+Successfully saved ../../reports/texts/data_understanding/type_variables/sonar_issues
+--> Sonar measures
+Successfully created the directory ../../reports/texts/data_understanding/type_variables/sonar_measures
+Successfully saved ../../reports/texts/data_understanding/type_variables/sonar_measures
+Finished defining types of variables
+Starting computing basic statistics for the variables of interest for each table
+--> Git commits changes
+Successfully created the directory ../../reports/texts/data_understanding/summary/git_commits
+Successfully saved ../../reports/texts/data_understanding/summary/git_commits
+Successfully saved ../../reports/texts/data_understanding/summary/git_commits
+--> Git commits 
+Warning: Figure ../../reports/texts/data_understanding/summary/git_commits already created
+Figure will be overwritten
+Warning: Figure ../../reports/texts/data_understanding/summary/git_commits already created
+Figure will be overwritten
+--> Jira issues 
+Successfully created the directory ../../reports/texts/data_understanding/summary/jira_issues
+Successfully saved ../../reports/texts/data_understanding/summary/jira_issues
+--> Sonar analysis 
+Successfully created the directory ../../reports/texts/data_understanding/summary/sonar_analysis
+Successfully saved ../../reports/texts/data_understanding/summary/sonar_analysis
+--> Sonar issues 
+Successfully created the directory ../../reports/texts/data_understanding/summary/sonar_issues
+Successfully saved ../../reports/texts/data_understanding/summary/sonar_issues
+Successfully saved ../../reports/texts/data_understanding/summary/sonar_issues
+--> Sonar measures 
+Successfully created the directory ../../reports/texts/data_understanding/summary/sonar_measures
+Successfully saved ../../reports/texts/data_understanding/summary/sonar_measures
+Successfully saved ../../reports/texts/data_understanding/summary/sonar_measures
+Finished computing and saving the type of all variables
+Starting plotting bar plots
+--> Sonar analysis
+Successfully created the directory ../../reports/figures/data_understanding/barplot/sonar_analysis
+Successfully saved ../../reports/figures/data_understanding/barplot/sonar_analysis
+--> Sonar issues
+Successfully created the directory ../../reports/figures/data_understanding/barplot/sonar_issues
+Successfully saved ../../reports/figures/data_understanding/barplot/sonar_issues
+--> Sonar issues
+Successfully saved ../../reports/figures/data_understanding/barplot/sonar_issues
+Finished computing and saving the bar plots
+Starting plotting histograms
+--> Git commits changes
+--> Git commits
+Successfully created the directory ../../reports/figures/data_understanding/histogram/git_commits
+Successfully saved ../../reports/figures/data_understanding/histogram/git_commits
+--> Jira issues
+There are no numerical variables in dataframe
+--> Sonar analysis
+There are no numerical variables in dataframe
+--> Sonar issues
+Successfully created the directory ../../reports/figures/data_understanding/histogram/sonar_issues
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_issues
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_issues
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_issues
+--> Sonar measures
+Successfully created the directory ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/histogram/sonar_measures
+Finishing computing and saving the histograms
+Starting plotting heatmaps of correlations
+--> Git commits changes
+Successfully created the directory ../../reports/figures/data_understanding/heatmap/git_commits_changes
+Successfully saved ../../reports/figures/data_understanding/heatmap/git_commits_changes
+--> Git commits
+Successfully created the directory ../../reports/figures/data_understanding/heatmap/git_commits
+Successfully saved ../../reports/figures/data_understanding/heatmap/git_commits
+--> Jira issues
+There are no numerical variables in dataframe
+--> Sonar analysis
+There are no numerical variables in dataframe
+--> Sonar issues
+Successfully created the directory ../../reports/figures/data_understanding/heatmap/sonar_issues
+Successfully saved ../../reports/figures/data_understanding/heatmap/sonar_issues
+--> Sonar measures
+Successfully created the directory ../../reports/figures/data_understanding/heatmap/sonar_measures
+Successfully saved ../../reports/figures/data_understanding/heatmap/sonar_measures
+Finished computing and saving the heatmap plots with correlations
+-------------------------------------------------------------------------------
+Starting checking data quality
+--> Sonar measures
+--> Sonar issues
+--> Sonar analysis
+--> Jira issues
+--> Git commits
+--> Git commits changes
+--> Jira issues
+--> SZZ fault inducing commits 
+--> Refactoring miner
+-------------------------DATA PREPARATION-------------------------
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Finishing joining SONAR tables
+Starting joining COMMIT tables
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading preprocessed data
+Finished reading preprocessed data
+Author column was dropped
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Successfully created the directory ../../reports/figures/models/WCSS_and_Elbow_Method
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.6810264094263218
+For n_clusters=3, The Silhouette Coefficient is 0.5015196144785903
+For n_clusters=4, The Silhouette Coefficient is 0.4494524164647441
+For n_clusters=5, The Silhouette Coefficient is 0.3694967520462998
+For n_clusters=6, The Silhouette Coefficient is 0.3120699179827236
+For n_clusters=7, The Silhouette Coefficient is 0.2827735465117542
+For n_clusters=8, The Silhouette Coefficient is 0.2798259233473261
+For n_clusters=9, The Silhouette Coefficient is 0.2843333463024093
+For n_clusters=10, The Silhouette Coefficient is 0.29235988662136714
+For n_clusters=11, The Silhouette Coefficient is 0.2279094344818136
+silhouette_score 0.6810264094263218
+Number of clusters changed to 4
+total inertia 39.154227281344745
+Number of clusters
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.955558314319726
+explained variance in PCA:0.955558314319726
+PCA components:6
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.6994276488479054
+For n_clusters=3, The Silhouette Coefficient is 0.5259828368783526
+For n_clusters=4, The Silhouette Coefficient is 0.36892628776081493
+For n_clusters=5, The Silhouette Coefficient is 0.4071902154593762
+For n_clusters=6, The Silhouette Coefficient is 0.43427449564252063
+For n_clusters=7, The Silhouette Coefficient is 0.3292683820371779
+For n_clusters=8, The Silhouette Coefficient is 0.32326694242476
+For n_clusters=9, The Silhouette Coefficient is 0.33315220896349834
+For n_clusters=10, The Silhouette Coefficient is 0.33822719901198706
+For n_clusters=11, The Silhouette Coefficient is 0.31398043766868566
+silhouette_score 0.6994276488479054
+Number of clusters changed to 4
+total inertia 32.45896985403372
+Number of clusters
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.8628115057945251
+For n_clusters=3, The Silhouette Coefficient is 0.4217982292175293
+For n_clusters=4, The Silhouette Coefficient is 0.4509984850883484
+For n_clusters=5, The Silhouette Coefficient is 0.5159876346588135
+For n_clusters=6, The Silhouette Coefficient is 0.5732516646385193
+For n_clusters=7, The Silhouette Coefficient is 0.5771715641021729
+For n_clusters=8, The Silhouette Coefficient is 0.5812332034111023
+For n_clusters=9, The Silhouette Coefficient is 0.5721474289894104
+For n_clusters=10, The Silhouette Coefficient is 0.5437682271003723
+For n_clusters=11, The Silhouette Coefficient is 0.5402292013168335
+silhouette_score 0.8628115057945251
+Number of clusters changed to 4
+total inertia 247.6764678955078
+Number of clusters
+Finished WCSS and Elbow method for choosing the number of clusters
+Computing UMAP plot with K-Means clusters
+Successfully created the directory ../../reports/figures/models/UMAP
+Successfully saved ../../reports/figures/models/UMAP
+-------------------------VALIDATION-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Creating average quality dataset
+Finished creating average quality dataset
+Creating quality rating
+Finished creating quality rating
+Creating plots of quality metrics
+Successfully created the directory ../../reports/figures/validation/
+Successfully saved ../../reports/figures/validation/
+Successfully saved ../../reports/figures/validation/
+Successfully saved ../../reports/figures/validation/
+Finished creating plots of quality metrics

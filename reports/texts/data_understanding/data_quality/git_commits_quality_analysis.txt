@@ -1,0 +1,21 @@
+---------- GIT COMMITS QUALITY ANALYSIS ----------
+
+
+The test(s) that will be performed for the GIT COMMITS table are:
+ · Primary key constraint
+ · Date range of commits
+ · Number of missing authors
+ · Duplicated rows
+--------------------------------------------------------------------------------
+########## PK TEST RESULTS ##########
+ · All the PK are unique.
+----------------------------------------
+########## DATES RANGE TEST RESULTS ##########
+ · All the dates are in the specified range.
+----------------------------------------
+########## MISSING AUTHORS TEST RESULTS ##########
+ · The percentage of missing authors is:0.064%.
+----------------------------------------
+########## DUPLICATED TEST RESULTS ##########
+ · There aren't any duplicated rows.
+----------------------------------------

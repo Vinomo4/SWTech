@@ -1,0 +1,7 @@
+,0
+PROJECT_ID,object
+COMMIT_HASH,object
+AUTHOR,object
+AUTHOR_DATE,object
+AUTHOR_TIMEZONE,int64
+COMMIT_MESSAGE,object
