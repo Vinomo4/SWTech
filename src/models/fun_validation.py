@@ -70,7 +70,7 @@ def plot_quality_metrics(df, metrics, yticks):
     elif metrics[0] == "blocker":
         legend_metrics = ["Blocker severity issues", "Critical severity issues", "Major severity issues", "Minor severity issues"]
     else:
-        legend_metrics = ["Code smells", "Bugs" "Vulnerabilities"]
+        legend_metrics = ["Code smells", "Bugs", "Vulnerabilities"]
     plt.legend(legend_metrics, bbox_to_anchor=(1.001,0.8), prop={'size': FONTSIZE})
     plt.grid()
     if metrics[0] == "blocker_violations":
