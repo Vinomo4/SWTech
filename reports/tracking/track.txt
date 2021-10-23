@@ -3,42 +3,122 @@ Finished importing libraries
 Defining path to data files
 Reading files
 Finished reading files
-Defining attributes of intereset for each dataframe...
-Finished selecting attributes of intereset for each dataframe
-Defining numerical types...
-Finished defining numercial types
-Modifying wrongly formatted columns...
-Finished modifying wrongly formatted columns
--------------------------------------------------------------------------------
-Defining attributes types and saving results...
---> Git commits changes
-Warning: Figure ../../reports/figures/data_understanding/type_variables/git_commits_changes already created
+-------------------------DATA PREPARATION-------------------------
+Defining path of the data files
+-------------------------DATA PREPARATION-------------------------
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+-------------------------DATA PREPARATION-------------------------
+Defining path of the data files
+Finishing defining path of the data files
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading preprocessed data
+Finished reading preprocessed data
+Author column was dropped
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/WCSS_and_Elbow_Method already created
 Figure will be overwritten
---> Git commits
-Warning: Figure ../../reports/figures/data_understanding/type_variables/git_commits already created
-Figure will be overwritten
---> Jira issues
-Warning: Figure ../../reports/figures/data_understanding/type_variables/jira_issues already created
-Figure will be overwritten
---> Sonar analysis
-Warning: Figure ../../reports/figures/data_understanding/type_variables/sonar_analysis already created
-Figure will be overwritten
---> Sonar issues
-Warning: Figure ../../reports/figures/data_understanding/type_variables/sonar_issues already created
-Figure will be overwritten
---> Sonar measures
-Warning: Figure ../../reports/figures/data_understanding/type_variables/sonar_measures already created
-Figure will be overwritten
-Finished defining types of variables
-Starting computing basic statistics for the variables of interest for each table
---> Git commits changes
--------------------------DECISION TREE CLASSIFIER-------------------------
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.6810264094263218
+-------------------------VALIDATION-------------------------
 Defining path to data files
 Reading files
 Finished reading files
--------------------------DECISION TREE CLASSIFIER-------------------------
+Creating average quality dataset
+Finished creating average quality dataset
+Creating quality rating
+Finished creating quality rating
+Creating plots of quality metrics
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Finished creating plots of quality metrics
+-------------------------VALIDATION-------------------------
 Defining path to data files
--------------------------DECISION TREE CLASSIFIER-------------------------
+Reading files
+Finished reading files
+Creating average quality dataset
+Finished creating average quality dataset
+Creating quality rating
+Finished creating quality rating
+Creating plots of quality metrics
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Finished creating plots of quality metrics
+-------------------------VALIDATION-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Creating average quality dataset
+Finished creating average quality dataset
+Creating quality rating
+Finished creating quality rating
+Creating plots of quality metrics
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Finished creating plots of quality metrics
+-------------------------VALIDATION-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Creating average quality dataset
+Finished creating average quality dataset
+Creating quality rating
+Finished creating quality rating
+Creating plots of quality metrics
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Finished creating plots of quality metrics
+-------------------------CLUSTERING-------------------------
+-------------------------VALIDATION-------------------------
+-------------------------VALIDATION-------------------------
+-------------------------VALIDATION-------------------------
 Defining path to data files
 Reading files
 Finished reading files

@@ -34,7 +34,7 @@ Project Organization
     │   │
     │   ├── data           <- Scripts .py related to data preparation 
     │   │   └── Data_preparation.py
-    │   │   └── preparation_data.py
+    │   │   └── data_cleansing.py
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
     │   │   └── basic_statistics.py
@@ -44,12 +44,10 @@ Project Organization
     │   │
     │   ├── models         <- Scripts to implement, train and validate clustering models. There are also all functinos used for this scripts. Validation of the models included.
     │   │   │                 predictions
-    │   │   ├── F_models.py
-    │   │   └── F_validation.py
+    │   │   ├── fun_models.py
+    │   │   └── fun_validation.py
     │   │   └── Models.py
-    │   │   └── predict_model.py [!!! eliminar !!!]
-    │   │   └── train_model.py [!!! eliminar !!!]]
-    │   │   └── validation.py
+    │   │   └── Validation.py
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations [!!! eliminar tota aquesta carpeta?!!!]
     │       └── visualize.py
