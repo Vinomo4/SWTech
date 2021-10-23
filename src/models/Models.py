@@ -13,13 +13,12 @@ import seaborn as sns
 import sklearn
 
 # Define path with .py codes containing functions used in this script
-
+sys.path.append('.')
 sys.path.append('../features')
-# Import useful functions for this script  
-from tracking import track
 
-sys.path.append('../models')
-from F_Models import save_plot,transform_dataset,WCSS_and_Elbow_Method,define_num_clusters,compute_PCA,compute_UMAP,plot_clusters
+# Import useful functions for this script
+from tracking import track
+from fun_models import save_plot,transform_dataset,WCSS_and_Elbow_Method,define_num_clusters,compute_PCA,compute_UMAP,plot_clusters
 
 track("-"*25 + "CLUSTERING" + "-"*25)
 
@@ -50,16 +49,17 @@ data = preprocessed_data.loc[:, preprocessed_data.columns != 'author']
 track("Author column was dropped")
 
 
-cluster_cols = ['author_timezone', 'commit_message', 'n_commits', 'n_projects_c', 'complexity', 'cognitive_complexity', 'duplicated_blocks', 'duplicated_files', 
+cluster_cols = ['author_timezone', 'commit_message', 'n_commits', 'n_projects_c', 'complexity', 'cognitive_complexity', 'duplicated_blocks', 'duplicated_files',
                 'duplicated_lines_density', 'open_issues', 'files', 'comment_lines_density', 'n_measures', 'n_projects_m', 'effort', 'message']
 
 #quality_cols = ['violations', 'blocker_violations', 'critical_violations', 'major_violations', 'minor_violations', 'n_projects_i']
-# info_violations, 'sqale_debt_ratio', 'code_smells', 'bugs', 'reliability_rating', 'vulnerabilities', 'security_rating', 
+# info_violations, 'sqale_debt_ratio', 'code_smells', 'bugs', 'reliability_rating', 'vulnerabilities', 'security_rating',
 #'blocker','critical', 'info', 'major', 'minor', 'issue_code_length', 'n_issues'
 
 # # Model
 # #### K-means with normalized data
 
+print("AAAAAAAAAAAAAAA")
 
 track("Starting mix max scaling of data")
 # Min max scaling of data
@@ -124,4 +124,3 @@ else:
 try: os.mkdir("../../temp_data/")
 except: pass
 preprocessed_data.to_csv("../../temp_data/model_data_with_clusters.csv", index_label = "author")
-
