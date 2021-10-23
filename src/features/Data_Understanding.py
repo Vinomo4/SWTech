@@ -13,6 +13,7 @@ spark = SparkSession.builder.getOrCreate()
 
 # Define path with .py codes containing functions used in this script
 sys.path.append('.')
+sys.path.append('../data')
 
 # Import useful functions for this script
 from tracking import track
@@ -117,7 +118,6 @@ track("Modifying wrongly formatted columns...")
 git_commits_changes[["LINES_ADDED","LINES_REMOVED"]] = git_commits_changes[["LINES_ADDED","LINES_REMOVED"]].apply(pd.to_numeric)
 
 track("Finished modifying wrongly formatted columns")
-
 
 ######## Describe data
 
