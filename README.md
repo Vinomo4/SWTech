@@ -16,9 +16,7 @@ Project Organization
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details [!!!!!!! eliminar si no s'acaba utilitzant !!!!!!!!]
     │
-    ├── models             <- A directory containing `.ipynb` files that contain trained and serialized models, model clusterization and model validation
-    │
-    ├── notebooks          <- Jupyter notebooks that act as scripts for understanding and preparing data
+    ├── notebooks          <- Jupyter notebooks that act as scripts for understanding and preparing data, trained and serialized models, model clusterization and model validation.
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials [!!!!! eliminar?!!!!!]
     │
@@ -34,15 +32,14 @@ Project Organization
     │   ├── __init__.py    <- Makes src a Python module [!!! eliminar? !!!]
     |   ├── automatic.py   <- Makes src a Python module
     │   │
-    │   ├── data           <- Scripts to download or generate data [!!! eliminar? !!!]
-    │   │   └── make_dataset.py
+    │   ├── data           <- Scripts .py related to data preparation 
+    │   │   └── Data_preparation.py
+    │   │   └── preparation_data.py
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
     │   │   └── basic_statistics.py
-    │   │   └── Data_preparation.py
     │   │   └── data_quality.py
     │   │   └── Data_Understanding.py
-    │   │   └── preparation_data.py
     │   │   └── tracking.py
     │   │
     │   ├── models         <- Scripts to implement, train and validate clustering models. There are also all functinos used for this scripts. Validation of the models included.
