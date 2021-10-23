@@ -8,10 +8,6 @@ import os
 os.chdir( '../data/')
 #exec(open("Data_Preparation.py").read())
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6fb659da62d033fcd3cb94ed8eb6b5e26e8ee57a
 os.chdir( '../models/')
 exec(open("Clustering.py").read())
 
