@@ -3,9 +3,6 @@ import sys
 import os
 import pandas as pd
 
-sys.path.append('../features')
-# Import useful functions for this script  
-from tracking import track
 
 def parse_args(): 
     parser = argparse.ArgumentParser()
@@ -22,7 +19,6 @@ def read_table():
     Output:
         - Clustering data
     '''
-    track("Defining path to data files")
 
     # Define base path to data files
     path = '../../temp_data/'
@@ -32,13 +28,10 @@ def read_table():
 
     # Ensure the input file exist
     assert os.path.isfile(path_clusters_data), f'{path_clusters_data} not found. Is it a file?'
-    
-    track("Reading files")
 
     # Read clusterized data 
     clusterized_data = pd.read_csv(path_clusters_data)
 
-    track("Finished reading files")
     return clusterized_data
 
 
@@ -53,17 +46,18 @@ if __name__ == '__main__':
         - Quality rating and name of the cluster
     '''
 
-    track("-"*25 + "DEPLOYMENT" + "-"*25)
     args = parse_args()
     author = args.author
     # Read the clusterized data
     clusterized_data = read_table()
 
     # Search the author in the table
-    try:
-        quality_rating = clusterized_data.loc[clusterized_data['author'] == author,'quality_rating']
-        cluster_name = clusterized_data.loc[clusterized_data['author'] == author,'cluster']
-    except:
+    quality_rating = clusterized_data.loc[clusterized_data['author'] == author,'quality_rating']
+    if len(quality_rating) == 0:
         print("The author is not in the dataset")
-    
-    print("The quality rating of the author {} is {}. It corresponds to the cluster {}".format(author,quality_rating,cluster)
+    else:
+        cluster_name = clusterized_data.loc[clusterized_data['author'] == author,'clusters']
+        print("The quality rating of the author {} is {}. {} has {}".format(author,quality_rating[0],author,cluster_name[0]))
+
+
+# python3 Deployment.py --author 'Adrian Crum'

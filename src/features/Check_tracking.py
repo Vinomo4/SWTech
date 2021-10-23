@@ -6,17 +6,14 @@ with open('../../reports/tracking/track.txt') as f:
             if '-------------------------CLUSTERING-------------------------' in f.read():
                 if '-------------------------DECISION TREE CLASSIFIER-------------------------' in f.read():
                     if '-------------------------VALIDATION-------------------------' in f.read():
-                        if '-------------------------DEPLOYMENT-------------------------' in f.read():
                             print("Everything works fine")
-                        else:
-                            print("DEPLOYMENT step has not been executed") 
                     else:
-                        print("VALIDATION and DEPLOYMENT steps have not been executed")
+                        print("VALIDATION step has not been executed")
                 else:
-                    print("DECISION TREE CLASSIFIER, VALIDATION and DEPLOYMENT steps have not been executed")
+                    print("DECISION TREE CLASSIFIER, and VALIDATION steps have not been executed")
             else:
-                print("CLUSTERING, DECISION TREE CLASSIFIER, VALIDATION and DEPLOYMENT steps have not been executed")
+                print("CLUSTERING, DECISION TREE CLASSIFIER, and VALIDATION steps have not been executed")
         else:
-            print("DATA PREPARATION, CLUSTERING , DECISION TREE CLASSIFIER, VALIDATION and DEPLOYMENT steps have not been executed")  
+            print("DATA PREPARATION, CLUSTERING , DECISION TREE CLASSIFIER, and VALIDATION steps have not been executed")  
     else:
-        print("DATA UNDERSTANDING, DATA PREPARATION, CLUSTERING , DECISION TREE CLASSIFIER, VALIDATION and DEPLOYMENT steps have not been executed")
+        print("DATA UNDERSTANDING, DATA PREPARATION, CLUSTERING , DECISION TREE CLASSIFIER, and VALIDATION steps have not been executed")
