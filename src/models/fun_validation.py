@@ -48,9 +48,9 @@ def plot_quality_metrics(df, metrics, yticks):
     Output:
         - Plot: plots the metric values for each cluster to compare among them
     '''
-    FONTSIZE = 27
-    FIG_WIDTH = 30
-    FIG_HEIGHT = 10
+    FONTSIZE = 12
+    FIG_WIDTH = 5
+    FIG_HEIGHT = 7
     fgr = plt.figure(figsize=(FIG_WIDTH, FIG_HEIGHT))
     for metric in metrics:
         markers, caps, bars = plt.errorbar(range(len(df)), df[metric + '_mean'], df[metric + '_std'],
@@ -63,6 +63,8 @@ def plot_quality_metrics(df, metrics, yticks):
     plt.ylabel('Metric value', fontsize = FONTSIZE)
     plt.xticks(ticks=range(len(df)), labels=df["clusters"], fontsize = FONTSIZE)
     plt.yticks(ticks = yticks, fontsize=FONTSIZE)
+    plt.tight_layout()
+    
     if metrics[0] == "blocker_violations":
         legend_metrics = ["Blocker violations", "Critical violations", "Major violations", "Minor violations"]
     elif metrics[0] == "blocker":
