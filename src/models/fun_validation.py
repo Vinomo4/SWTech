@@ -48,13 +48,13 @@ def plot_quality_metrics(df, metrics, yticks):
     Output:
         - Plot: plots the metric values for each cluster to compare among them
     '''
-    FONTSIZE = 30
-    FIG_WIDTH = 38
-    FIG_HEIGHT = 15
+    FONTSIZE = 27
+    FIG_WIDTH = 30
+    FIG_HEIGHT = 10
     fgr = plt.figure(figsize=(FIG_WIDTH, FIG_HEIGHT))
     for metric in metrics:
         markers, caps, bars = plt.errorbar(range(len(df)), df[metric + '_mean'], df[metric + '_std'],
-                                        label=metric,  fmt='--o', markersize=15, elinewidth=6)
+                                        label=metric,  fmt='--o', markersize=12, elinewidth=4)
         [bar.set_alpha(0.4) for bar in bars]
         [cap.set_alpha(0.4) for cap in caps]
 

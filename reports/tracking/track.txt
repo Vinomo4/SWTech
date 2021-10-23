@@ -126,3 +126,83 @@ Finished reading files
 Defining path to data files
 Reading files
 Finished reading files
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading preprocessed data
+Finished reading preprocessed data
+Author column was dropped
+Starting mix max scaling of data
+Finished mix max scaling of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/WCSS_and_Elbow_Method already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.6810264094263216
+For n_clusters=3, The Silhouette Coefficient is 0.5015196144785903
+For n_clusters=4, The Silhouette Coefficient is 0.449452416464744
+For n_clusters=5, The Silhouette Coefficient is 0.3694967520462997
+silhouette_score 0.6810264094263216
+Number of clusters changed to 4
+total inertia 39.25089704114535
+Number of clusters
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9555583143197264
+explained variance in PCA:0.9555583143197264
+PCA components:6
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/WCSS_and_Elbow_Method already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.6994276488479054
+For n_clusters=3, The Silhouette Coefficient is 0.5259828368783525
+For n_clusters=4, The Silhouette Coefficient is 0.36955831738097067
+For n_clusters=5, The Silhouette Coefficient is 0.4135791895150854
+silhouette_score 0.6994276488479054
+Number of clusters changed to 4
+total inertia 32.46358879156239
+Number of clusters
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting standardization of data
+Finished standardization of data
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/WCSS_and_Elbow_Method already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.8460144400596619
+For n_clusters=3, The Silhouette Coefficient is 0.425942599773407
+For n_clusters=4, The Silhouette Coefficient is 0.4744914174079895
+For n_clusters=5, The Silhouette Coefficient is 0.5173059105873108
+silhouette_score 0.8460144400596619
+Number of clusters changed to 4
+total inertia 317.83447265625
+Number of clusters
+Finished WCSS and Elbow method for choosing the number of clusters
+Computing UMAP plot with K-Means clusters
+Warning: Figure ../../reports/figures/models/UMAP already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/UMAP
+Creating quality rating
+Finished creating quality rating
+-------------------------VALIDATION-------------------------
+Defining path to data files
+Reading files
+Finished reading files
+Creating average quality dataset
+Finished creating average quality dataset
+Creating plots of quality metrics
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Warning: Figure ../../reports/figures/validation/ already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/validation/
+Finished creating plots of quality metrics
