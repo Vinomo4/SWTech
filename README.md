@@ -46,8 +46,10 @@ Project Organization
     │   │   │                 predictions
     │   │   ├── fun_models.py
     │   │   └── fun_validation.py
+    │   │   └── fun_classifiers.py
     │   │   └── Models.py
     │   │   └── Validation.py
+    │   │   └── Classifiers.py
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations [!!! eliminar tota aquesta carpeta?!!!]
     │       └── visualize.py
