@@ -17,7 +17,7 @@ with open('../../reports/tracking/track.txt') as f:
         All_fine = False
 
 with open('../../reports/tracking/track.txt') as f:
-    if not '-------------------------DECISION TREE CLASSIFIER-------------------------' in f.read():
+    if not '-------------------------CLASSIFIER-------------------------' in f.read():
         print("DECISION TREE CLASSIFIER step has not been executed")
         All_fine = False
 
@@ -28,4 +28,3 @@ with open('../../reports/tracking/track.txt') as f:
 
 if All_fine:
     print("Everything works fine")
-

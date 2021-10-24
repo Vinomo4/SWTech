@@ -42,13 +42,13 @@ def train_decision_tree(data,depth = 3):
     # An image of the DTC indicating the decision threshold is stored.
     fn=X_train.columns
     cn= sorted(Y_train.unique())
-    plt.figure(figsize=(20,12))
+    plt.figure(figsize=(20,12), facecolor = "white")
     tree.plot_tree(dtc,
                    feature_names = fn,
                    class_names=cn,
                    filled = True,
                    fontsize=10);
-    path = '../../reports/figures/models/Decision_tree_classifier/'
+    path = '../../reports/figures/models/Classifiers/'
     if not os.path.isdir(path):
         os.makedirs(path)
     plt.savefig(path+'Decision_tree.png')
@@ -104,10 +104,11 @@ def generate_confusion_heatmap(pred,gt,method):
     for i in range(c):
         conf_matrix[i] /= sum(conf_matrix[i])
 
+    plt.figure(figsize=(20,12), facecolor = "white")
     ax = plt.axes()
     sn.heatmap(conf_matrix, annot=True, fmt=".3f", ax = ax,xticklabels=labels, yticklabels=labels)
     ax.set_title('Confusion matrix')
-    path = '../../reports/figures/models/Decision_tree_classifier/'
+    path = '../../reports/figures/models/Classifiers/'
     if not os.path.isdir(path):
         os.makedirs(path)
     plt.savefig(path+'Confussion_matrix_'+method+'.png')
