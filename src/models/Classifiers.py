@@ -14,7 +14,6 @@ from fun_classifiers import split_data,train_decision_tree,train_random_forest,g
 
 track("-"*25 + "CLASSIFIER" + "-"*25)
 
-
 # Reading data
 
 # Define path to data files
@@ -29,6 +28,7 @@ path_clustered_data = path + 'model_data_with_clusters.csv'
 # Ensure the input file exist
 assert os.path.isfile(path_clustered_data), f'{path_clustered_data} not found. Is it a file?'
 
+
 # Read the files
 
 # Read model_data table
@@ -39,29 +39,30 @@ track("Finished reading files")
 # Droping undesired columns
 data = clustered_data.drop(["author", "quality_rating"],axis = 1)
 
-# First, we will split our clustered data into training and test partitions. In this case, 20% of the data is stored for testing whereas 80 % is used in the training procedure
 
-X_train, X_test, Y_train, Y_test = split_data(data,0.2)
-
-# Then, a DTC with a maximum depth of 3 will be trained.
+# A DTC with a maximum depth of 3 will be trained, performing 10 random data splits and averaging its results.
 
 # Creating the decision tree classifier.
 track("Training DTC")
-dtc = train_decision_tree([X_train,Y_train])
+dtc,cm_dtc, labels = train_decision_tree(data,0.2)
+track("Finished training DTC")
 
 # The same operation is executed but, in this case, an ensembling of 100 DTC is used for prediciton.
+
 track("Training RF")
-rf = train_random_forest([X_train,Y_train])
+rf,cm_rf,labels = train_random_forest(data,0.2)
+track("Finished training RF")
 
-# Then, the prediction for both models is obtained and their respective confusion matrix are calculated.
 
-pred_dtc = dtc.predict(X_test)
-pred_rf = rf.predict(X_test)
+# Then their respective confusion heatmap is generated.
 
-generate_confusion_heatmap(pred_dtc,Y_test,"DTC")
-generate_confusion_heatmap(pred_rf,Y_test,"RF")
+generate_confusion_heatmap(cm_dtc,labels,"DTC")
+generate_confusion_heatmap(cm_rf,labels,"RF")
 
-# Lastly, both models are stored.
-track("Saving the models")
+
+# Lastly, both models are trained over all the data and stored.
+track("Re-training and saving the models")
+dtc,_,_ = train_decision_tree(data,0)
+rf,_,_ = train_random_forest(data,0)
 dump(dtc, '../../models/Decision_tree_classifier.joblib')
 dump(rf, '../../models/Random_forest.joblib')
