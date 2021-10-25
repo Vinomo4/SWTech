@@ -2,6 +2,7 @@
 import pandas as pd
 import os
 import sys
+from joblib import dump
 
 # Define path with .py codes containing functions used in this script
 sys.path.append('.')
@@ -45,16 +46,22 @@ X_train, X_test, Y_train, Y_test = split_data(data,0.2)
 # Then, a DTC with a maximum depth of 3 will be trained.
 
 # Creating the decision tree classifier.
+track("Training DTC")
 dtc = train_decision_tree([X_train,Y_train])
 
 # The same operation is executed but, in this case, an ensembling of 100 DTC is used for prediciton.
-
+track("Training RF")
 rf = train_random_forest([X_train,Y_train])
 
-# Lastly, the prediction for both models is obtained and their respective confusion matrix are calculated.
+# Then, the prediction for both models is obtained and their respective confusion matrix are calculated.
 
 pred_dtc = dtc.predict(X_test)
 pred_rf = rf.predict(X_test)
 
 generate_confusion_heatmap(pred_dtc,Y_test,"DTC")
 generate_confusion_heatmap(pred_rf,Y_test,"RF")
+
+# Lastly, both models are stored.
+track("Saving the models")
+dump(dtc, '../../models/Decision_tree_classifier.joblib')
+dump(rf, '../../models/Random_forest.joblib')

@@ -481,3 +481,9 @@ Warning: Figure ../../reports/figures/validation/ already created
 Figure will be overwritten
 Successfully saved ../../reports/figures/validation/
 Finished creating plots of quality metrics
+-------------------------CLASSIFIER-------------------------
+-------------------------CLASSIFIER-------------------------
+-------------------------CLASSIFIER-------------------------
+Defining path to data files
+Reading files
+Finished reading files
