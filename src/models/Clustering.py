@@ -29,7 +29,7 @@ track("-"*25 + "CLUSTERING" + "-"*25)
 track("Defining path to data files")
 
 # Define base path to data files
-path = '../../temp_data/'
+path = '../../data/interim/'
 
 # Define path to the preprocesseded dataset that will be used in this script
 path_preprocessed_data = path + 'model_data.csv'
@@ -50,11 +50,11 @@ data = preprocessed_data.loc[:, preprocessed_data.columns != 'author']
 track("Author column was dropped")
 
 
-cluster_cols = ['author_timezone', 'commit_message', 'n_commits', 'n_projects_c', 'complexity', 'cognitive_complexity', 'duplicated_blocks', 'duplicated_files', 
+cluster_cols = ['author_timezone', 'commit_message', 'n_commits', 'n_projects_c', 'complexity', 'cognitive_complexity', 'duplicated_blocks', 'duplicated_files',
                 'duplicated_lines_density', 'files', 'comment_lines_density', 'n_measures', 'n_projects_m', 'effort', 'message','lines_added','lines_removed']
 
 #quality_cols = ['violations', 'blocker_violations', 'critical_violations', 'major_violations', 'minor_violations', 'n_projects_i']
-# info_violations, 'sqale_debt_ratio', 'code_smells', 'bugs', 'reliability_rating', 'vulnerabilities', 'security_rating', 
+# info_violations, 'sqale_debt_ratio', 'code_smells', 'bugs', 'reliability_rating', 'vulnerabilities', 'security_rating',
 #'blocker','critical', 'info', 'major', 'minor', 'issue_code_length', 'n_issues'
 
 # # Model
@@ -129,7 +129,7 @@ quality_rating_data = preprocessed_data.groupby('clusters').agg({
 }).reset_index()
 
 # Calculate ponderated mean of the violations variables
-violations = quality_rating_data[["blocker_violations", "critical_violations", "major_violations", "minor_violations"]] 
+violations = quality_rating_data[["blocker_violations", "critical_violations", "major_violations", "minor_violations"]]
 violations = violations*[0.5, 0.4, 0.07, 0.03]
 violations = np.sum(violations, axis=1)
 # Calculate ponderated mean of the severity issues variables
@@ -176,13 +176,13 @@ for i in range(len(quality_rating)):
     elif quality_rating[i] <= 0.4 and quality_rating[i] > 0.2:
         dic_name_clusters[i] = 'Poor programming skills'
     elif quality_rating[i] <= 0.6 and quality_rating[i] > 0.4:
-        dic_name_clusters[i] = 'Bad programming skills' 
+        dic_name_clusters[i] = 'Bad programming skills'
     elif quality_rating[i] <= 0.8 and quality_rating[i] > 0.6:
         dic_name_clusters[i] = 'Average programming skills'
     elif quality_rating[i] <= 0.9 and quality_rating[i] > 0.8:
         dic_name_clusters[i] = 'Good programming skills'
     else:
-        dic_name_clusters[i] = 'Excellent programming skills'   
+        dic_name_clusters[i] = 'Excellent programming skills'
 
 preprocessed_data['clusters'] = preprocessed_data['clusters'].map(dic_name_clusters)
 
@@ -193,8 +193,6 @@ preprocessed_data['clusters'] = preprocessed_data['clusters'].map(dic_name_clust
 
 # Lastly, the final dataframe with the cluster variable and the quality rating is written in the suitable folder.
 
-try: os.mkdir("../../temp_data/")
+try: os.mkdir("../../data/processed/")
 except: pass
-preprocessed_data.to_csv("../../temp_data/model_data_with_clusters.csv", index = False)
-
-
+preprocessed_data.to_csv("../../data/processed/model_data_with_clusters.csv", index = False)

@@ -20,7 +20,7 @@ track("-"*25 + "CLASSIFIER" + "-"*25)
 track("Defining path to data files")
 
 # Define base path to data files
-path = '../../temp_data/'
+path = '../../data/processed/'
 
 # Define path to the table that will be used in this project
 path_clustered_data = path + 'model_data_with_clusters.csv'

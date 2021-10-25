@@ -22,7 +22,7 @@ track("-"*25 + "VALIDATION" + "-"*25)
 track("Defining path to data files")
 
 # Define base path to data files
-path = '../../temp_data/'
+path = '../../data/processed/'
 
 # Define path to the model_data_with_clusters table
 path_clusters_data = path + 'model_data_with_clusters.csv'
@@ -34,7 +34,7 @@ assert os.path.isfile(path_clusters_data), f'{path_clusters_data} not found. Is 
 
 track("Reading files")
 
-# Read clusterized data 
+# Read clusterized data
 clusterized_data = pd.read_csv(path_clusters_data)
 
 track("Finished reading files")
@@ -69,7 +69,7 @@ track("Finished creating average quality dataset")
 
 
 track("Creating plots of quality metrics")
-# There will be three different plots. It is necessary to create the groups of the variables to be printed in the same plot 
+# There will be three different plots. It is necessary to create the groups of the variables to be printed in the same plot
 violation_metrics = ["blocker_violations", "critical_violations", "major_violations", "minor_violations"]
 severity_metrics = ["blocker", "critical", "major", "minor"]
 other_metrics = ["code_smells", "bugs", "vulnerabilities"]
@@ -87,5 +87,3 @@ plot_quality_metrics(sorted_average_quality, severity_metrics, [-1000, -500, 0, 
 
 plot_quality_metrics(sorted_average_quality, other_metrics, [0, 5000, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000])
 track("Finished creating plots of quality metrics")
-
-

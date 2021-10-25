@@ -269,3 +269,86 @@ Warning: Figure ../../reports/figures/validation/ already created
 Figure will be overwritten
 Successfully saved ../../reports/figures/validation/
 Finished creating plots of quality metrics
+-------------------------DATA PREPARATION-------------------------
+Defining path of the data files
+Finishing defining path of the data files
+Reading files
+Finishing reading files
+Finishing selecting variables of interest for each dataframe
+Starting defining numercial types
+Finishing defining numercial types
+Starting analysing NA values from all tables
+Finishing analysing NA values from all tables
+Starting analysing categorical variables
+Finishing analysing categorical variables from all tables
+Starting codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Finishing codifying MESSAGE and COMMIT_MESSAGE variables using message_length() function
+Starting creating ISSUE_CODE_LENGTH variable for SONAR_ISSUES table
+Starting joining SONAR tables
+Finishing joining SONAR tables
+Starting joining COMMIT tables
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading preprocessed data
+Finished reading preprocessed data
+-------------------------CLUSTERING-------------------------
+Defining path to data files
+Reading preprocessed data
+Finished reading preprocessed data
+Author column was dropped
+Starting standardization of data
+Finished standardization of data
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/WCSS_and_Elbow_Method already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.5071278291885417
+For n_clusters=3, The Silhouette Coefficient is 0.4404700982411829
+For n_clusters=4, The Silhouette Coefficient is 0.2817803396437538
+For n_clusters=5, The Silhouette Coefficient is 0.3052275378416216
+silhouette_score 0.5071278291885417
+Number of clusters changed to 4
+total inertia 2257.8110553905717
+Number of clusters
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute PCA
+Performing PCA on dataset ...
+explained variance in PCA:0.9758045899515468
+explained variance in PCA:0.9758045899515468
+PCA components:11
+Finished computing PCA
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/WCSS_and_Elbow_Method already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.5127771754841708
+For n_clusters=3, The Silhouette Coefficient is 0.44273805741182654
+For n_clusters=4, The Silhouette Coefficient is 0.28062150195468427
+For n_clusters=5, The Silhouette Coefficient is 0.28699236801171246
+silhouette_score 0.5127771754841708
+Number of clusters changed to 4
+total inertia 2161.7093086872032
+Number of clusters
+Finished WCSS and Elbow method for choosing the number of clusters
+Starting to compute UMAP
+Performing UMAP on dataset ...
+Finished computing UMAP
+Starting WCSS and Elbow method for choosing the number of clusters
+Warning: Figure ../../reports/figures/models/WCSS_and_Elbow_Method already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/WCSS_and_Elbow_Method
+For n_clusters=2, The Silhouette Coefficient is 0.7899306416511536
+For n_clusters=3, The Silhouette Coefficient is 0.4154452383518219
+For n_clusters=4, The Silhouette Coefficient is 0.4827254116535187
+For n_clusters=5, The Silhouette Coefficient is 0.5318806171417236
+silhouette_score 0.7899306416511536
+Number of clusters changed to 4
+total inertia 266.5687561035156
+Number of clusters
+Finished WCSS and Elbow method for choosing the number of clusters
+Computing UMAP plot with K-Means clusters
+Warning: Figure ../../reports/figures/models/UMAP already created
+Figure will be overwritten
+Successfully saved ../../reports/figures/models/UMAP
+Creating quality rating
+Finished creating quality rating

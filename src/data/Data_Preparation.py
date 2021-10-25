@@ -241,6 +241,6 @@ new_col_names = []
 for col in complete_table.columns:
     new_col_names.append(col.lower())
 complete_table.columns = new_col_names
-try: os.mkdir("../../temp_data/")
+try: os.mkdir("../../data/interim/")
 except: pass
-complete_table.to_csv("../../temp_data/model_data.csv", index_label = "author")
+complete_table.to_csv("../../data/interim/model_data.csv", index_label = "author")
