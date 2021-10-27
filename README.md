@@ -112,7 +112,7 @@ The following READMEs provide details about the other scripts and options used i
 1. Prepare data
 2. Train model
 3. Test model
-4. Creation of a new quality rating associated with each cluster
+4. Creation of a new quality rating assigned to each cluster
 5. ...
 
 ## Deployment
