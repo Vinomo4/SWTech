@@ -99,10 +99,10 @@ These files can be used to create train, validation, testing splits: (comprovar 
 * `SONAR_RULES.csv` (NO?)
 * `SZZ_FAULT_INDUCING_COMMITS.csv`
 
-To obtain more detailed information reagrding tables and high-quality diagram see https://drive.google.com/file/d/1eF23cFIq7QNx0v11BnMi_89Yh79DMVzK/view
+To obtain more detailed information regarding tables and high-quality diagrams see https://drive.google.com/file/d/1eF23cFIq7QNx0v11BnMi_89Yh79DMVzK/view
 (pensar com penjar aquest pdf ja que només tenen accés els de la UPC)
 
-The data files used to train and evaluate the model can be find:
+The data files used to train and evaluate the model can be found:
 * Com pengem els dos datasets de la temp_data folder que conté model_data.csv i model_data_with_clusters.csv
 
 ## Workflow Overview: From original data files to trained clustering model 
@@ -112,7 +112,7 @@ The following READMEs provide details about the other scripts and options used i
 1. Prepare data
 2. Train model
 3. Test model
-4. Creation of a new quality rating associated to each cluster
+4. Creation of a new quality rating associated with each cluster
 5. ...
 
 ## Deployment
