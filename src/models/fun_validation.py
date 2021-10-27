@@ -1,10 +1,13 @@
 # Import libraries and packages
 import os
+import sys
 import matplotlib.pyplot as plt
 
-os.getcwd()
-os.chdir( '../features')
+sys.path.append(".")
+sys.path.append('../features/')
+
 from tracking import track
+from fun_classifiers import train_decision_tree,train_random_forest
 
 def save_plot(fig,filename):
     '''
@@ -64,7 +67,7 @@ def plot_quality_metrics(df, metrics, yticks):
     plt.xticks(ticks=range(len(df)), labels=df["clusters"], fontsize = FONTSIZE)
     plt.yticks(ticks = yticks, fontsize=FONTSIZE)
     plt.tight_layout()
-    
+
     if metrics[0] == "blocker_violations":
         legend_metrics = ["Blocker violations", "Critical violations", "Major violations", "Minor violations"]
     elif metrics[0] == "blocker":
@@ -79,4 +82,41 @@ def plot_quality_metrics(df, metrics, yticks):
         save_plot(fgr, "severity_issues")
     else:
         save_plot(fgr, "issues_types")
+    plt.close()
+
+def compare_classifiers(data, part_size):
+    '''
+    Objective:
+        - Generate a line chart where the x axis represents the depth of the tree
+          and the y-axis the test accuracy for both DT/RF classifiers.
+    Input:
+        - data: Dataframe that contains the values used for modeling
+        - part_size: Percentage of values reserved for testing.
+    Output:
+        - The plot itself.
+    '''
+    # Aesthetic theme selection
+    plt.style.use('ggplot')
+    # Droping undesired columns
+    data = data.drop(["author", "quality_rating"],axis = 1)
+    dt_accs = []
+    rf_accs = []
+    # Path for storing the plot.
+    path = '../../reports/figures/validation/'
+    if not os.path.isdir(path):
+        os.makedirs(path)
+    for i in range(3,10):
+        _,_,dtc_acc,_ = train_decision_tree(data,part_size, depth = i,plot = False)
+        _,_,rf_acc,_ = train_random_forest(data,part_size,depth = i)
+        dt_accs.append(dtc_acc)
+        rf_accs.append(rf_acc)
+    # plotting DT points
+    plt.plot(range(3,10), dt_accs, label = "DT")
+    # plotting RF points
+    plt.plot(range(3,10), rf_accs, label = "RF")
+    plt.xlabel('Tree(s) maximum depth')
+    plt.ylabel('Test accuracy')
+    plt.title('Comparison of perfomance between DT/RF')
+    plt.legend()
+    plt.savefig(path+"classifier_comparison.png")
     plt.close()

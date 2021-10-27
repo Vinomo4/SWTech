@@ -54,7 +54,7 @@ def generate_confusion_matrix(pred,gt):
             conf_matrix[i] /= sum(conf_matrix[i])
         return conf_matrix, labels
 
-def train_decision_tree(data,part_size,depth = 3):
+def train_decision_tree(data,part_size,depth = 3, plot = True):
     '''
     Objective:
         - Create a decision tree that classifies authors into their respective
@@ -63,10 +63,13 @@ def train_decision_tree(data,part_size,depth = 3):
         - data :Dataframe that contains the values used for modeling.
         - part_size: Percentage of values reserved for testing.
         - depth : Maximum depth of the classifier.
+        - plot: Boolean indicating wheather the visual representation of tree should be stored.
 
     Output:
         - Trained Decision Tree Classifier.
         - Averaged confussion matrix.
+        - Averaged accuracy.
+        - Labels of the authors.
     '''
 
     # Training with all the data.
@@ -94,20 +97,21 @@ def train_decision_tree(data,part_size,depth = 3):
             for y_pred,y in zip(pred,Y_test):
                 if y_pred == y: aux_acc += 1
             acc_list.append(aux_acc/len(pred)*100)
+        if plot:
         # An image of the DTC indicating the decision threshold is stored.
-        fn=X_train.columns
-        cn= sorted(Y_train.unique())
-        plt.figure(figsize=(20,12), facecolor = "white")
-        tree.plot_tree(dtc,
-                          feature_names = fn,
-                          class_names=cn,
-                          filled = True,
-                          fontsize=10,
-                          rounded = True);
-        path = '../../reports/figures/models/Classifiers/'
-        if not os.path.isdir(path):
-            os.makedirs(path)
-        plt.savefig(path+'Decision_tree.png')
+            fn=X_train.columns
+            cn= sorted(Y_train.unique())
+            plt.figure(figsize=(20,12), facecolor = "white")
+            tree.plot_tree(dtc,
+                              feature_names = fn,
+                              class_names=cn,
+                              filled = True,
+                              fontsize=10,
+                              rounded = True);
+            path = '../../reports/figures/models/Classifiers/'
+            if not os.path.isdir(path):
+                os.makedirs(path)
+            plt.savefig(path+'Decision_tree.png')
         return dtc, sum(cm_list)/len(cm_list),sum(acc_list)/len(acc_list),labels
 
 def train_random_forest(data,part_size,depth = 3, n_trees = 100):
@@ -123,6 +127,9 @@ def train_random_forest(data,part_size,depth = 3, n_trees = 100):
 
     Output:
         - Trained Random Forest.
+        - Averaged confussion matrix.
+        - Averaged accuracy.
+        - Labels of the authors.
     '''
     # Training with all the data
     if not part_size:
