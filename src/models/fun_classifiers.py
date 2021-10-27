@@ -95,7 +95,8 @@ def train_decision_tree(data,part_size,depth = 3):
                           feature_names = fn,
                           class_names=cn,
                           filled = True,
-                          fontsize=10);
+                          fontsize=10,
+                          rounded = True);
         path = '../../reports/figures/models/Classifiers/'
         if not os.path.isdir(path):
             os.makedirs(path)
