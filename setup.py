@@ -1,10 +1,10 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='src',
+    name='SWTech setup',
     packages=find_packages(),
-    version='0.1.0',
-    description='Repository for the ject.',
+    version='1.0',
+    description='Repository for TechDebt dataset authors clustering.',
     author='SWTech',
     license='',
 )
