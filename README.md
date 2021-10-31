@@ -104,13 +104,14 @@ The data files used to train and evaluate the model can be found:
 
 ## Workflow Overview: From original data files to trained clustering model 
 
-The following READMEs provide details about the other scripts and options used in the entire pipeline. They detail the entire process from start (i.e., using new data in `.vcf` format) to finish (i.e., trained neural network, plots, etc.). (uff això no ho farem no? Si que podem dir l'ordre de'execucions que es fan)
+The following points describes the entire pipeline from start (using raw data) to finish (i.e., trained clustering model, plots, etc.).
 
-1. Prepare data
-2. Train model
-3. Test model
-4. Creation of a new quality rating assigned to each cluster
-5. ...
+1. Data understanding: Data quality & Data Exploration
+2. Data Preparation
+3. Data Reduction
+4. Train model
+5. Creation of a new quality rating assigned to each cluster
+6. Evaluation
 
 ## Deployment
 The deployment process consists of giving an input author the user obtains the quality rating corresponding to the author entered as an output.
