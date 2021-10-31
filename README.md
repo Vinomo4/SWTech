@@ -6,7 +6,6 @@ Project Organization
 ------------
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train` [!!!!!!!!! l'acabarem utilitzant? !!!!!!!!!!]
     ├── README.md          <- The top-level README for developers using this project
     ├── data
     │   ├── interim        <- Intermediate data that has been transformed.
@@ -15,12 +14,12 @@ Project Organization
     │   │   └── model_data_with_clusters.csv
     │   └── raw            <- The original, immutable data dump.
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details [!!!!!!! eliminar si no s'acaba utilitzant !!!!!!!!]
     │
     ├── notebooks               <- Jupyter notebooks that act as scripts for understanding and preparing data, trained and serialized models, model        │   └── Classifiers.ipynb      clusterization and model validation.
+    │   └── Classifiers.ipynb
     │   └── Clustering.ipynb
-    │   └── Data_preparation.ipynb
-    │   └── Data_understanding.ipynb
+    │   └── Data_Preparation.ipynb
+    │   └── Data_Understanding.ipynb
     │   └── Validation.ipynb
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
@@ -33,7 +32,7 @@ Project Organization
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported [SI JA TENIM EL REQUIREMENTS QUE INSTALA TOTS ELS MODULS, PERQ CAL AQUESTA?]]
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported.
     ├── src                <- Source code for use in this project.
     |   ├── automatic.py   <- Executes automatically all the code scripts stroring the obtained results.
     │   │
@@ -41,10 +40,12 @@ Project Organization
     │   │   └── Data_preparation.py
     │   │   └── data_cleansing.py
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling.
+    │   ├── features       <- Scripts to turn raw data into features for modeling (also includes tracking and querying scripts).
     │   │   └── basic_statistics.py
+    │   │   └── Check_tracking.py
     │   │   └── data_quality.py
     │   │   └── Data_Understanding.py
+    │   │   └── Query.py
     │   │   └── tracking.py
     │   │
     │   ├── models         <- Scripts to implement, train and validate clustering and classification models. 
@@ -55,12 +56,8 @@ Project Organization
     │   │   └── Clustering.py
     │   │   └── Validation.py
     │   │   └── Classifiers.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations [!!! eliminar tota aquesta carpeta?!!!]
-    │       └── visualize.py
     │  
-    ├── test_environment.py [!!! ÉS NECESSARI ?!!!]
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── test_environment.py 
     
 
 
