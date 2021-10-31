@@ -56,10 +56,10 @@ Project Organization
     │   │   └── Clustering.py
     │   │   └── Validation.py
     │   │   └── Classifiers.py
+    │   │
+    │   └── automatic.py  <- Automatically executes all the project scripts.
     │  
     └── test_environment.py 
-    
-
 
 --------
 
